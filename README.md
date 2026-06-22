@@ -1,3 +1,14 @@
+---
+title: NKTgAIforOrganizer
+emoji: 🧠
+colorFrom: blue
+colorTo: green
+sdk: static
+app_file: index.html
+pinned: false
+license: other
+---
+
 NKTg AI is not a summarization tool. It is a specialized Language Decoding System that uses physical algorithms to measure semantic energy and extract the Core Content — the core logical genetic code of a text.
 
 1. The Nature of Core Content
@@ -49,11 +60,13 @@ Quantifiability: AMP%, DAMP%, Compression%, retained sentences
 Causality: Core Content often in Action → Result structures
 Decision-Making: Quickly evaluate whether to read, examine, or act
 Objectivity: Algorithm-based, not subjective emphasis
+
 6. Value for General Users
 Read Quickly: Identify the highest-action-density sentence instantly
 Evaluate Before Reading: Observe AMP/DAMP in round 1
 Objective Comparison: Compare Core Content across multiple texts
 Identify Key Points: Spot conditions, warnings, or risks
+
 7. Limitations
 If Compression > 90% in Standard or Refined mode, manually copy or upload a file to ensure input integrity.
 
@@ -71,7 +84,7 @@ Text never leaves the user's device
 No server, no cloud, no remote database
 History is stored in localStorage — residing entirely on the user's device
 
-Commercial License 
+Commercial License
 For commercial use without the GPL obligations, a commercial license is required.
 See LICENSE-commercial for terms and conditions.
 
@@ -130,7 +143,7 @@ copies of the software.
 ----------
 For commercial licensing inquiries, please contact:
 
-Nguyễn Khánh Tùng  
+Nguyễn Khánh Tùng
 
 Email: nktg.org@gmail.com
 
@@ -140,5 +153,4 @@ Website: https://nktg.org
 
 By using NKTgLaw under this commercial license, you agree to be bound by the terms above.
 
-Contact Nguyen Khanh Tung (nktg.org@gmail.com
- for licensing and support.
+Contact Nguyen Khanh Tung (nktg.org@gmail.com) for licensing and support.
