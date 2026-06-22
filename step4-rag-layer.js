@@ -4,6 +4,10 @@
  * ============================================================================
  * Fix: Chỉ fetch node có url thật, bỏ qua node null thay vì fetch domain rác
  *      Thêm timeout tổng để tránh treo pipeline nếu mọi node đều chậm
+ * v3: Thêm hosting cá nhân làm phương án dự phòng CUỐI CÙNG — chỉ dùng khi
+ *     TOÀN BỘ 12 node đều không phản hồi. Không cạnh tranh tải với 12 git
+ *     trong điều kiện bình thường, không cần health-check riêng (đã là
+ *     lựa chọn cuối, không còn đường lùi nào khác).
  */
 
 import { setPipelineState, unlockPipelineUI, Logger } from './step1-init.js';
@@ -11,19 +15,24 @@ import { handleCacheLayer } from './step5-cache-layer.js';
 
 export const DistributedRagLayer = {
     nodes: [
-        { name: 'GitHub',      tier: 'Diamond', weight: 10, url: 'https://raotin.github.io/raotinnhanh/' },
-        { name: 'GitLab',      tier: 'Diamond', weight: 10, url: null },
-        { name: 'HuggingFace', tier: 'Diamond', weight: 10, url: null },
-        { name: 'Bitbucket',   tier: 'Gold',    weight: 5,  url: null },
-        { name: 'SourceForge', tier: 'Gold',    weight: 5,  url: null },
-        { name: 'Launchpad',   tier: 'Gold',    weight: 5,  url: null },
-        { name: 'Gitea',       tier: 'Silver',  weight: 3,  url: null },
-        { name: 'Codeberg',    tier: 'Silver',  weight: 3,  url: null },
-        { name: 'Framagit',    tier: 'Silver',  weight: 3,  url: null },
-        { name: 'Rocketgit',   tier: 'Bronze',  weight: 1,  url: null },
-        { name: 'SourceHut',   tier: 'Bronze',  weight: 1,  url: null },
-        { name: 'Disroot',     tier: 'Bronze',  weight: 1,  url: null }
+        { name: 'GitHub',        tier: 'Diamond', weight: 10, url: 'https://nktgbase.github.io/NKTgAI/' },
+        { name: 'HuggingFace-1', tier: 'Diamond', weight: 10, url: 'https://huggingface.co/spaces/xanhnon/NKTgAIforOrganizer' },
+        { name: 'HuggingFace-2', tier: 'Diamond', weight: 10, url: 'https://huggingface.co/spaces/NKTgAI/NKTgAI' },
+        { name: 'GitLab-1',      tier: 'Gold',    weight: 5,  url: null },
+        { name: 'GitLab-2',      tier: 'Gold',    weight: 5,  url: null },
+        { name: 'Launchpad',     tier: 'Gold',    weight: 5,  url: null },
+        { name: 'Gitea',         tier: 'Silver',  weight: 3,  url: null },
+        { name: 'Codeberg',      tier: 'Silver',  weight: 3,  url: null },
+        { name: 'Framagit',      tier: 'Silver',  weight: 3,  url: null },
+        { name: 'Rocketgit',     tier: 'Bronze',  weight: 1,  url: null },
+        { name: 'SourceHut',     tier: 'Bronze',  weight: 1,  url: null },
+        { name: 'Disroot',       tier: 'Bronze',  weight: 1,  url: null }
     ],
+
+    // Hosting cá nhân — bản sao đầy đủ code (giống 12 git) + thêm phần thanh toán riêng.
+    // Chỉ kích hoạt khi TOÀN BỘ 12 node trên đều sập.
+    PERSONAL_HOSTING: { name: 'Personal Hosting', tier: 'Reserve', weight: 0, url: 'https://nktg.org' },
+
     TIMEOUT_MS: 3000,
 
     async checkNodeHealth(node) {
@@ -67,11 +76,11 @@ export const DistributedRagLayer = {
             }
         }
 
-        // Fallback: nếu không node nào healthy, dùng node đầu tiên có url (offline mode)
+        // Fallback cuối cùng: TOÀN BỘ 12 node đều sập → chuyển sang hosting cá nhân.
+        // Không health-check lại nữa vì đây đã là lựa chọn cuối, không còn đường lùi.
         if (!healthyNode) {
-            const fallbackNode = activeNodes[0] || this.nodes[0];
-            Logger.log(`[Step 4 Fallback] No healthy node found. Using fallback: ${fallbackNode.name}`, "warn");
-            healthyNode = fallbackNode;
+            Logger.log(`[Step 4 Fallback] Toàn bộ 12 node đều không phản hồi. Chuyển sang hosting cá nhân: ${this.PERSONAL_HOSTING.url}`, "warn");
+            healthyNode = this.PERSONAL_HOSTING;
         }
 
         context.rag = {
@@ -105,4 +114,4 @@ export async function handleDistributedRagLayer(context) {
     }
 }
 
-console.log("[Kernel] Step 4 Distributed Capability & Metadata Router initialized with 12-Node Matrix.");
+console.log("[Kernel] Step 4 Distributed Capability & Metadata Router initialized with 12-Node Matrix + Personal Hosting Reserve.");
