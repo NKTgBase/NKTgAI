@@ -1,0 +1,3033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKTg AI for Organizers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22gL%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%22100%25%22%20fx%3D%2244%25%22%20fy%3D%2250%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20%20%20stop-color%3D%22rgba%28255%2C220%2C160%2C0.85%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2215%25%22%20%20stop-color%3D%22rgba%28255%2C170%2C70%2C0.6%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2245%25%22%20%20stop-color%3D%22rgba%28180%2C70%2C20%2C0.4%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgba%28150%2C60%2C10%2C0%29%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22gR%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%22100%25%22%20fx%3D%2256%25%22%20fy%3D%2250%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20%20%20stop-color%3D%22rgba%28180%2C240%2C250%2C0.85%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2215%25%22%20%20stop-color%3D%22rgba%2860%2C210%2C230%2C0.6%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2245%25%22%20%20stop-color%3D%22rgba%2820%2C110%2C150%2C0.4%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgba%2810%2C70%2C100%2C0%29%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22gC%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%2250%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20%20%20stop-color%3D%22rgba%28255%2C255%2C255%2C1%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20%20stop-color%3D%22rgba%28220%2C200%2C255%2C0.8%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgba%28160%2C120%2C255%2C0%29%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gPT%22%20x1%3D%220%22%20y1%3D%221%22%20x2%3D%220%22%20y2%3D%220%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20%20%20stop-color%3D%22rgba%28180%2C140%2C255%2C0.5%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20%20stop-color%3D%22rgba%28130%2C70%2C230%2C0.25%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgba%28100%2C40%2C200%2C0.03%29%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gPB%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20%20%20stop-color%3D%22rgba%28180%2C140%2C255%2C0.5%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20%20stop-color%3D%22rgba%28130%2C70%2C230%2C0.25%29%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgba%28100%2C40%2C200%2C0.03%29%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CclipPath%20id%3D%22cL%22%3E%3Crect%20x%3D%220%22%20%20y%3D%220%22%20width%3D%2216%22%20height%3D%2232%22%2F%3E%3C%2FclipPath%3E%0A%20%20%20%20%3CclipPath%20id%3D%22cR%22%3E%3Crect%20x%3D%2216%22%20y%3D%220%22%20width%3D%2216%22%20height%3D%2232%22%2F%3E%3C%2FclipPath%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cellipse%20cx%3D%2216%22%20cy%3D%2216%22%20rx%3D%2211.65%22%20ry%3D%223.85%22%20fill%3D%22url%28%23gL%29%22%20clip-path%3D%22url%28%23cL%29%22%2F%3E%0A%20%20%3Cellipse%20cx%3D%2216%22%20cy%3D%2216%22%20rx%3D%2211.65%22%20ry%3D%223.85%22%20fill%3D%22url%28%23gR%29%22%20clip-path%3D%22url%28%23cR%29%22%2F%3E%0A%20%20%3Cpolygon%20points%3D%2215.63%2C16%2016.37%2C16%2018.03%2C5.65%2013.97%2C5.65%22%20fill%3D%22url%28%23gPT%29%22%2F%3E%0A%20%20%3Cpolygon%20points%3D%2215.63%2C16%2016.37%2C16%2018.03%2C26.35%2013.97%2C26.35%22%20fill%3D%22url%28%23gPB%29%22%2F%3E%0A%20%20%3Cellipse%20cx%3D%2216%22%20cy%3D%2216%22%20rx%3D%220.92%22%20ry%3D%220.6%22%20fill%3D%22url%28%23gC%29%22%2F%3E%0A%3C%2Fsvg%3E">
+    <style>
+        :root {
+            --bg-color: #f5f5f5;
+            --panel-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --text-color: #1a1a1a;
+            --accent-color: #d97706;
+            --success-color: #16a34a;
+            --danger-color: #dc2626;
+            --disabled-color: #d1d5db;
+            --muted-color: #6b7280;
+
+            /* ── TYPOGRAPHY SYSTEM (Inter) ── */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+            /* Small: 12px / 400 — chú thích, nhãn phụ, timestamps */
+            --fs-small: 12px;
+            --fw-small: 400;
+
+            /* Body: 14px / 400 — văn bản nội dung chính */
+            --fs-body: 14px;
+            --fw-body: 400;
+
+            /* Body Semibold: 14px / 600 — nhấn mạnh trong văn bản */
+            --fw-body-semibold: 600;
+
+            /* Subtitle: 18px / 600 — tiêu đề phụ, nhóm tiêu đề */
+            --fs-subtitle: 18px;
+            --fw-subtitle: 600;
+
+            /* Display: 20px+ / 600 — tiêu đề chính, tiêu đề trang */
+            --fs-display: 20px;
+            --fw-display: 600;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--fs-body);
+            font-weight: var(--fw-body);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--bg-color);
+            padding: 24px;
+        }
+
+        h1 {
+            font-size: var(--fs-display);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .subtitle {
+            font-size: var(--fs-small);
+            color: var(--muted-color);
+            margin-top: -5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: var(--fw-body-semibold);
+            font-size: var(--fs-body);
+        }
+
+        select, textarea {
+            width: 100%;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-color);
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: var(--fs-body);
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+            margin-bottom: 4px;
+        }
+
+        select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(217,119,6,0.2);
+        }
+
+        .counter-container {
+            text-align: right;
+            font-size: var(--fs-small);
+            color: var(--muted-color);
+            font-family: var(--font-family-mono);
+            margin-bottom: 15px;
+        }
+
+        .counter-container.limit-reached {
+            color: var(--danger-color);
+            font-weight: var(--fw-body-semibold);
+        }
+
+        .file-upload-group { margin-bottom: 15px; }
+        .file-upload-label { display: block; margin-bottom: 8px; font-weight: var(--fw-body-semibold); font-size: var(--fs-body); }
+        .file-upload-label span { font-weight: var(--fw-body); font-size: var(--fs-small); color: var(--muted-color); margin-left: 6px; }
+        .file-upload-input { display: none; }
+
+        .file-upload-btn {
+            display: inline-block;
+            background-color: var(--panel-bg);
+            border: 1px dashed var(--border-color);
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-size: var(--fs-body);
+            color: var(--muted-color);
+            cursor: pointer;
+            transition: border-color 0.2s, color 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .file-upload-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .file-upload-status {
+            margin-top: 6px;
+            font-size: var(--fs-small);
+            color: var(--muted-color);
+            font-family: var(--font-family-mono);
+            min-height: 18px;
+        }
+
+        .file-upload-status.success { color: #16a34a; }
+        .file-upload-status.error   { color: var(--danger-color); font-weight: var(--fw-body-semibold); }
+
+        .btn {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-size: var(--fs-body);
+            font-weight: var(--fw-body-semibold);
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .btn:hover:not(:disabled) { background-color: #15803d; }
+
+        .btn:disabled {
+            background-color: var(--disabled-color);
+            color: #6b7280;
+            cursor: not-allowed;
+        }
+
+        .mode-selector-wrap {
+            overflow-x: hidden;
+        }
+
+        .mode-selector-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 8px 0;
+            transform-origin: center top;
+        }
+
+        @media (max-width: 600px) {
+            .mode-selector-inner {
+                transform: scale(0.72);
+                margin-bottom: -40px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .mode-selector-inner {
+                transform: scale(0.55);
+                margin-bottom: -80px;
+            }
+        }
+
+        /* ── NAV ── */
+        .nktg-nav-desktop {
+            display: none;
+        }
+
+        .nktg-nav-mobile {
+            display: none;
+        }
+
+        /* Desktop nav — ẩn mặc định, chỉ hiện trên desktop */
+        .nktg-nav-desktop {
+            display: none;
+        }
+
+        /* Desktop: sidebar trái */
+        @media (min-width: 769px) {
+            body {
+                padding: 20px 20px 20px 320px;
+            }
+            .nktg-nav-desktop {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0; left: 0;
+                width: 300px;
+                height: 100vh;
+                background: var(--bg-color);
+                border-right: 1px solid var(--border-color);
+                padding: 24px 0 0 0;
+                gap: 4px;
+                z-index: 100;
+                overflow: hidden;
+            }
+            /* historyDropdown chiếm flex, đẩy auth-footer xuống đáy */
+            #historyDropdown {
+                flex: 1;
+                min-height: 0;
+            }
+            .nktg-nav-desktop .nav-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px 20px;
+                color: var(--muted-color);
+                font-size: var(--fs-body);
+                font-weight: var(--fw-body);
+                cursor: pointer;
+                border-radius: 0;
+                transition: background 0.2s, color 0.2s;
+                text-decoration: none;
+                border: none;
+                background: transparent;
+                width: 100%;
+                text-align: left;
+            }
+            .nktg-nav-desktop .nav-item:hover {
+                background: var(--bg-color);
+                color: var(--text-color);
+            }
+            .nktg-nav-desktop .nav-item.active {
+                color: #7c3aed;
+                font-weight: var(--fw-body-semibold);
+            }
+            .nktg-nav-desktop .nav-item .nav-icon {
+                font-size: var(--fs-subtitle);
+                width: 24px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            .nktg-nav-desktop .nav-item.active .nav-icon {
+                color: #7c3aed;
+            }
+        }
+
+        /* Ẩn hamburger trên desktop */
+        .nktg-mobile-hamburger { display: none; }
+        .nktg-mobile-overlay   { display: none; }
+        .nktg-mobile-drawer    { display: none; }
+
+        /* Mobile: ẩn bottom bar — thay bằng hamburger + drawer như Gemini */
+        @media (max-width: 768px) {
+            .nktg-mobile-hamburger { display: flex; }
+            .nktg-mobile-drawer    { display: flex; }
+            body {
+                padding: 20px 20px 80px 20px;
+            }
+            .nktg-nav-mobile {
+                display: none; /* ẩn bottom bar hoàn toàn */
+            }
+
+            /* Nút hamburger ≡ góc trên trái */
+            .nktg-mobile-hamburger {
+                display: flex;
+                position: fixed;
+                top: 14px;
+                left: 14px;
+                z-index: 300;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 8px;
+                border-radius: 8px;
+                color: var(--muted-color);
+                align-items: center;
+                justify-content: center;
+                transition: background 0.15s;
+            }
+            .nktg-mobile-hamburger:hover { background: rgba(0,0,0,0.06); }
+
+            /* Overlay mờ phía sau drawer */
+            .nktg-mobile-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.35);
+                z-index: 400;
+            }
+            .nktg-mobile-overlay.open { display: block; }
+
+            /* Drawer trượt từ trái ra */
+            .nktg-mobile-drawer {
+                position: fixed;
+                top: 0; left: 0;
+                width: 300px;
+                height: 100vh;
+                height: 100dvh; /* iOS Safari: dynamic viewport height tính cả thanh địa chỉ */
+                background: var(--bg-color);
+                z-index: 500;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                transform: translateX(-100%);
+                transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+                box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+            }
+            .nktg-mobile-drawer.open { transform: translateX(0); }
+
+            /* Header drawer — tên app + nút đóng X */
+            .nktg-mobile-drawer-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 16px 16px;
+                flex-shrink: 0;
+            }
+            .nktg-mobile-drawer-title {
+                font-size: var(--fs-subtitle);
+                font-weight: var(--fw-body-semibold);
+                color: var(--accent-color);
+            }
+            .nktg-mobile-drawer-close {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--muted-color);
+                padding: 6px;
+                border-radius: 6px;
+                font-size: var(--fs-display);
+                line-height: 1;
+                transition: background 0.15s;
+            }
+            .nktg-mobile-drawer-close:hover { background: rgba(0,0,0,0.06); }
+
+            /* Nav items trong drawer */
+            .nktg-mobile-drawer .nav-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 20px;
+                color: var(--muted-color);
+                font-size: var(--fs-body);
+                font-weight: var(--fw-body);
+                cursor: pointer;
+                border: none;
+                background: transparent;
+                width: 100%;
+                text-align: left;
+                transition: background 0.15s, color 0.15s;
+                border-radius: 0;
+            }
+            .nktg-mobile-drawer .nav-item:hover { background: rgba(0,0,0,0.05); color: var(--text-color); }
+            .nktg-mobile-drawer .nav-item.active { color: #7c3aed; font-weight: var(--fw-body-semibold); }
+            .nktg-mobile-drawer .nav-item .nav-icon { font-size: var(--fs-display); width: 24px; text-align: center; flex-shrink: 0; }
+
+            /* History section trong drawer — scroll riêng */
+            .nktg-mobile-drawer .history-section-label {
+                margin-top: 4px;
+                flex-shrink: 0;
+            }
+            #mobileHistoryDropdown {
+                overflow-y: auto;
+                flex: 1;
+                min-height: 0;
+            }
+
+            /* Auth footer trong drawer — luôn hiện ở đáy */
+            .nktg-mobile-drawer-footer {
+                position: relative;
+                background: var(--bg-color);
+                border-top: 1px solid var(--border-color);
+                padding: 8px 0 env(safe-area-inset-bottom, 16px);
+                flex-shrink: 0;
+            }
+            .nktg-mobile-drawer-footer .nav-auth-row {
+                display: flex;
+                align-items: center;
+                padding: 0 8px 0 0;
+            }
+            .nktg-mobile-drawer-footer .nav-auth-bottom {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px 20px;
+                color: var(--muted-color);
+                font-size: var(--fs-body);
+                background: none;
+                border: none;
+                cursor: pointer;
+                text-align: left;
+                width: 100%;
+            }
+            .nktg-mobile-drawer-footer .nav-gear-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--muted-color);
+                padding: 8px;
+                border-radius: 8px;
+                transition: background 0.15s;
+            }
+            .nktg-mobile-drawer-footer .nav-gear-btn:hover { background: rgba(0,0,0,0.06); }
+
+            /* Padding top cho content vì không còn bottom nav */
+            #inputDock { bottom: 0; }
+        }
+        /* ────────── */
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            border-radius: 3px;
+            background-color: #e5e7eb;
+            color: #374151;
+            float: right;
+        }
+
+        /* ── Chat-style layout: trang cuộn bằng thanh cuộn ngoài cùng (html),
+               input cố định (fixed) ở đáy viewport ── */
+        html {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        body {
+            min-height: 100%;
+            align-items: flex-start;
+        }
+
+        .container {
+            padding-bottom: 0;
+        }
+
+        #scrollArea {
+            padding-bottom: 220px; /* fallback ban đầu; script đồng bộ chính xác theo chiều cao #inputDock */
+            position: relative;
+            min-height: calc(100vh - 280px); /* trừ padding trên + chiều cao #inputDock ước lượng */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* canh giữa khi chưa có output; tự nhường chỗ khi nội dung dài hơn khung nhìn */
+        }
+
+        /* Khung kết quả và khung chat dùng cùng box-model với khung log
+           (width 100% + border-box) để có chiều ngang bằng nhau */
+        #outputPanel,
+        #inputWrap {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        /* Force Inter cho toàn bộ output — strip font từ văn bản gốc */
+        #outputPanel,
+        #outputPanel *,
+        #outputPanel p,
+        #outputPanel span,
+        #outputPanel div,
+        #outputPanel li,
+        #outputPanel td,
+        #outputPanel th {
+            font-family: var(--font-family) !important;
+            font-size: var(--fs-body) !important;
+        }
+        /* Giữ semibold cho strong/b */
+        #outputPanel strong,
+        #outputPanel b {
+            font-family: var(--font-family) !important;
+            font-weight: var(--fw-body-semibold) !important;
+        }
+
+        #outputPanel:empty {
+            display: none;
+        }
+
+        /* Spinner xử lý — elip xoay ngược kim đồng hồ, thay nút sendArrow lúc đang chạy */
+        @keyframes nktgSpin {
+            to { transform: rotate(-360deg); }
+        }
+        .nktg-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #d1d5db;
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: nktgSpin 0.7s linear infinite;
+        }
+
+        #outputPanel > * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        /* #inputDock: clone chính xác box-model của .container (cùng padding
+           với body, cùng max-width + padding với .container) → luôn thẳng
+           mép với #scrollArea/outputPanel */
+        #inputDock {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #inputDock > .input-dock-inner {
+            width: 100%;
+            max-width: 848px; /* 800px (.container content) + 2*24px padding = content area 800px, khớp outputPanel */
+            padding: 0 24px;
+            box-sizing: border-box;
+        }
+
+        /* Nút cuộn-xuống nổi giữa, phía trên inputDock — kiểu ChatGPT */
+        #scrollToBottomBtn {
+            position: fixed;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--muted-color);
+            font-size: var(--fs-subtitle);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+            z-index: 11;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        #scrollToBottomBtn:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        #scrollToBottomBtn.visible {
+            display: flex;
+        }
+
+        @media (min-width: 769px) {
+            #inputDock {
+                padding: 20px 20px 20px 320px;
+            }
+            #scrollToBottomBtn {
+                left: calc(50% + 160px);
+            }
+        }
+        @media (max-width: 768px) {
+            #inputDock {
+                padding: 20px 20px env(safe-area-inset-bottom, 20px) 20px;
+                bottom: 0;
+            }
+            #scrollArea {
+                padding-bottom: 280px; /* fallback ban đầu; script đồng bộ chính xác */
+                min-height: calc(100vh - 340px);
+            }
+        }
+
+
+        /* ── HISTORY SIDEBAR LIST ── */
+        #historyDropdown {
+            display: none;
+            background: var(--bg-color);
+            overflow-y: auto;
+            flex: 1;
+            min-height: 0;
+        }
+        /* ── HISTORY ITEM WRAPPER ── */
+        .history-item-wrap {
+            position: relative;
+            margin: 1px 4px;
+            border-radius: 6px;
+            transition: background 0.15s;
+        }
+        .history-item-wrap:hover { background: rgba(0,0,0,0.05); }
+        .history-item-wrap.active { background: rgba(0,0,0,0.08); }
+
+        .history-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 8px 36px 8px 16px; /* right padding để nhường chỗ nút 3 chấm */
+            cursor: pointer;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .history-item-preview {
+            font-size: var(--fs-body);
+            color: var(--text-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 220px;
+        }
+        .history-item-meta {
+            font-size: var(--fs-small);
+            color: var(--muted-color);
+        }
+
+        /* Nút 3 chấm — ẩn mặc định, hiện khi hover wrap */
+        .history-item-more {
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--fs-subtitle);
+            color: var(--muted-color);
+            transition: background 0.15s, color 0.15s;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        .history-item-wrap:hover .history-item-more,
+        .history-item-wrap.menu-open .history-item-more {
+            display: flex;
+        }
+        .history-item-more:hover {
+            background: rgba(0,0,0,0.1);
+            color: var(--text-color);
+        }
+
+        /* ── HISTORY CONTEXT MENU ── */
+        .history-ctx-menu {
+            position: fixed;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.14);
+            z-index: 9999;
+            min-width: 180px;
+            padding: 6px 0;
+            font-size: var(--fs-body);
+        }
+        .history-ctx-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 9px 16px;
+            cursor: pointer;
+            color: var(--text-color);
+            text-align: left;
+            transition: background 0.12s;
+            font-size: var(--fs-body);
+        }
+        .history-ctx-item:hover { background: rgba(0,0,0,0.05); }
+        .history-ctx-item.danger { color: #dc2626; }
+        .history-ctx-item svg { flex-shrink: 0; opacity: 0.7; }
+
+        /* Modal đổi tên */
+        .history-rename-modal {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        .history-rename-modal.open { display: flex; }
+        .history-rename-box {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px;
+            width: 340px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .history-rename-box h3 {
+            margin: 0 0 14px;
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+        }
+        .history-rename-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 9px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: var(--fs-body);
+            font-family: inherit;
+            outline: none;
+        }
+        .history-rename-input:focus { border-color: var(--accent-color); }
+        .history-rename-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .history-rename-cancel {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 7px 16px;
+            font-size: var(--fs-body);
+            cursor: pointer;
+        }
+        .history-rename-save {
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 7px 16px;
+            font-size: var(--fs-body);
+            font-weight: var(--fw-body-semibold);
+            cursor: pointer;
+        }
+
+        .history-empty {
+            padding: 12px 20px;
+            font-size: var(--fs-body);
+            color: var(--muted-color);
+        }
+        .history-clear-row {
+            padding: 6px 16px 16px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4px;
+        }
+        #historyClearAllBtn {
+            background: none;
+            border: none;
+            font-size: var(--fs-small);
+            color: var(--muted-color);
+            cursor: pointer;
+            padding: 0;
+        }
+        #historyClearAllBtn:hover { color: #dc2626; }
+        /* ── AUTH FOOTER — cố định ở đáy sidebar như Copilot ── */
+        .nav-auth-footer {
+            position: relative;
+            background: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            padding: 8px 0 20px;
+            flex-shrink: 0;
+        }
+        .nav-auth-bottom {
+            width: 100%;
+        }
+
+        /* ── BRAND ROW (title + toggle button) ── */
+        .nktg-brand-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 12px 20px 20px;
+            flex-shrink: 0;
+        }
+        .nktg-brand-title {
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+            color: var(--accent-color);
+            cursor: pointer;
+            letter-spacing: -0.2px;
+            user-select: none;
+            padding: 0;
+        }
+        .nktg-brand-title:hover { opacity: 0.8; }
+
+        /* Nút toggle sidebar */
+        .nktg-sidebar-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--muted-color);
+            padding: 6px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.15s, color 0.15s;
+        }
+        .nktg-sidebar-toggle:hover {
+            background: rgba(0,0,0,0.06);
+            color: var(--text-color);
+        }
+
+        /* ── SIDEBAR COLLAPSED STATE ── */
+        @media (min-width: 769px) {
+            body.sidebar-collapsed {
+                padding-left: 20px;
+            }
+            body.sidebar-collapsed .nktg-nav-desktop {
+                width: 0;
+                padding: 0;
+                overflow: hidden;
+                border-right: none;
+            }
+            body.sidebar-collapsed #inputDock {
+                padding-left: 20px;
+            }
+            body.sidebar-collapsed #scrollToBottomBtn {
+                left: 50%;
+            }
+            /* Nút mở lại sidebar — hiện ở góc trên trái khi collapsed */
+            #sidebarReopenBtn {
+                display: none;
+                position: fixed;
+                top: 16px;
+                left: 16px;
+                z-index: 200;
+                background: var(--bg-color);
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                padding: 8px 14px;
+                font-size: var(--fs-body);
+                font-weight: var(--fw-body-semibold);
+                color: var(--accent-color);
+                cursor: pointer;
+                gap: 8px;
+                align-items: center;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                transition: box-shadow 0.2s;
+            }
+            #sidebarReopenBtn:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+            body.sidebar-collapsed #sidebarReopenBtn {
+                display: flex;
+            }
+        }
+
+        /* Nút reopen sidebar — ẩn mặc định, chỉ desktop mới dùng */
+        #sidebarReopenBtn { display: none; }
+
+        /* ── GEAR ICON trong auth footer ── */
+        .nav-auth-row {
+            display: flex;
+            align-items: center;
+            padding: 0 8px 0 0;
+        }
+        .nav-auth-bottom {
+            flex: 1;
+            justify-content: flex-start;
+        }
+        .nav-auth-label {
+            flex: 1;
+        }
+        .nav-gear-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--muted-color);
+            padding: 7px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            transition: background 0.15s, color 0.15s;
+        }
+        .nav-gear-btn:hover {
+            background: rgba(0,0,0,0.08);
+            color: var(--text-color);
+        }
+
+        /* New chat button — màu tím và đậm chỉ khi active */
+        #newChatBtn { gap: 10px; }
+        #newChatBtn.active { color: #7c3aed; font-weight: var(--fw-body-semibold); }
+
+        /* History section label — like Gemini "Gần đây" */
+        .history-section-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px 6px;
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            color: var(--muted-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            user-select: none;
+            border-top: 1px solid var(--border-color);
+            margin-top: 8px;
+        }
+        .history-section-label:hover { color: var(--text-color); }
+        /* Xoá modal History cũ */
+        #nktgHistoryModal { display: none !important; }
+
+        /* ── AUTH NAV AVATAR ── */
+        .nav-avatar {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            color: #fff;
+            font-size: var(--fs-small); font-weight: var(--fw-body-semibold);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .nav-user-name {
+            font-size: var(--fs-body);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 140px;
+        }
+
+        /* ── AUTH MODAL ── */
+        #nktgAuthModal {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .auth-modal-box {
+            background: #fff;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            overflow: hidden;
+            font-family: var(--font-family);
+        }
+        .auth-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px 0;
+        }
+        .auth-modal-header h2 {
+            margin: 0;
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+            color: #1a1a1a;
+        }
+        .auth-modal-close {
+            background: none; border: none;
+            font-size: var(--fs-display); cursor: pointer;
+            color: #9ca3af; line-height: 1;
+            padding: 4px;
+        }
+        .auth-modal-close:hover { color: #1a1a1a; }
+
+        /* ── VIETQR PAYMENT MODAL ── */
+        #nktgVietQRModal {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .vietqr-modal-box {
+            background: #fff;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            overflow: hidden;
+            font-family: var(--font-family);
+            text-align: center;
+        }
+        .vietqr-modal-body { padding: 0 24px 24px; }
+        .vietqr-image {
+            width: 100%;
+            max-width: 260px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            margin: 4px auto 14px;
+            display: block;
+        }
+        .vietqr-amount {
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        .vietqr-code-box {
+            background: #f9fafb;
+            border: 1px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-bottom: 14px;
+        }
+        .vietqr-code-label { font-size: var(--fs-small); color: #6b7280; margin-bottom: 2px; }
+        .vietqr-code-value {
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+            color: var(--accent-color);
+            letter-spacing: 1px;
+            font-family: var(--font-family-mono);
+        }
+        .vietqr-status {
+            font-size: var(--fs-body);
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 24px;
+        }
+        .vietqr-status.success { color: #16a34a; font-weight: var(--fw-body-semibold); }
+        .vietqr-status.error { color: #dc2626; font-weight: var(--fw-body-semibold); }
+        .vietqr-spinner {
+            width: 14px; height: 14px;
+            border: 2px solid #e5e7eb;
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: vietqr-spin 0.8s linear infinite;
+        }
+        @keyframes vietqr-spin { to { transform: rotate(360deg); } }
+        .auth-tabs {
+            display: flex;
+            gap: 0;
+            padding: 16px 24px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .auth-tab {
+            background: none; border: none;
+            padding: 8px 16px;
+            font-size: var(--fs-body); font-weight: var(--fw-body);
+            color: #6b7280; cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .auth-tab:hover { color: #1a1a1a; }
+        .auth-tab-active {
+            color: #1a1a1a;
+            border-bottom-color: #d97706;
+            font-weight: var(--fw-body-semibold);
+        }
+        .auth-panel { padding: 24px; }
+        #authMessage {
+            display: none;
+            font-size: var(--fs-body);
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: #fef2f2;
+        }
+        .auth-input {
+            width: 100%; box-sizing: border-box;
+            padding: 10px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: var(--fs-body);
+            margin-bottom: 10px;
+            outline: none;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .auth-input:focus { border-color: #d97706; box-shadow: 0 0 0 3px rgba(217,119,6,0.15); }
+        .auth-btn-primary {
+            width: 100%;
+            padding: 11px;
+            background: #1a1a1a;
+            color: #fff;
+            border: none; border-radius: 8px;
+            font-size: var(--fs-body); font-weight: var(--fw-body-semibold);
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 4px;
+        }
+        .auth-btn-primary:hover { background: #374151; }
+        .auth-switch-link {
+            text-align: center;
+            margin-top: 16px;
+            font-size: var(--fs-body);
+            color: #6b7280;
+        }
+        .auth-switch-link button {
+            background: none; border: none;
+            color: #d97706; font-weight: var(--fw-body-semibold);
+            cursor: pointer; font-size: var(--fs-body);
+            padding: 0;
+        }
+        .auth-switch-link button:hover { text-decoration: underline; }
+        .auth-divider {
+            text-align: center;
+            color: #9ca3af;
+            font-size: var(--fs-small);
+            margin: 4px 0 16px;
+        }
+        #googleSignInBtn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .auth-google-note {
+            font-size: var(--fs-small); color: #9ca3af;
+            text-align: center; margin-top: 12px;
+        }
+
+        /* ── SETTINGS MODAL ── */
+        #nktgSettingsModal {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .settings-modal-box {
+            background: #fff;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 640px;
+            height: 480px;
+            max-height: 80vh;
+            display: flex;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            overflow: hidden;
+            font-family: var(--font-family);
+        }
+        .settings-sidebar {
+            width: 180px;
+            flex-shrink: 0;
+            background: #f9fafb;
+            border-right: 1px solid #e5e7eb;
+            padding: 16px 0;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .settings-sidebar-title {
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 0 20px 10px;
+        }
+        .settings-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 9px 20px;
+            font-size: var(--fs-body);
+            color: #374151;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+        .settings-nav-item svg { flex-shrink: 0; opacity: 0.75; }
+        .settings-nav-item.active svg { opacity: 1; }
+        .settings-nav-item:hover { background: rgba(0,0,0,0.04); }
+        .settings-nav-item.active {
+            background: #fff7ed;
+            color: var(--accent-color);
+            font-weight: var(--fw-body-semibold);
+            box-shadow: inset 3px 0 0 var(--accent-color);
+        }
+        .settings-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 28px;
+            overflow-y: auto;
+            position: relative;
+        }
+        .settings-modal-close {
+            position: absolute;
+            top: 16px; right: 16px;
+            background: none; border: none;
+            font-size: var(--fs-display); cursor: pointer;
+            color: #9ca3af; line-height: 1; padding: 4px;
+        }
+        .settings-modal-close:hover { color: #1a1a1a; }
+        .settings-panel { display: none; }
+        .settings-panel.active { display: block; }
+        .settings-row-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: var(--fs-body);
+            color: #1a1a1a;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .settings-row-btn:hover { background: #f9fafb; }
+        .settings-row-btn.danger { color: #dc2626; border-color: #fecaca; }
+        .settings-row-btn.danger:hover { background: #fef2f2; }
+
+        .plan-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+        }
+        .plan-card.current {
+            border-color: var(--accent-color);
+            background: #fff7ed;
+        }
+        .plan-card-name { font-weight: var(--fw-body-semibold); font-size: var(--fs-body); color: #1a1a1a; }
+        .plan-card-desc { font-size: var(--fs-small); color: #6b7280; margin-top: 2px; }
+        .plan-card-price { font-size: var(--fs-small); color: #6b7280; white-space: nowrap; }
+        .plan-card-price-main { font-size: var(--fs-body); font-weight: var(--fw-body-semibold); color: #1a1a1a; white-space: nowrap; }
+        .plan-card-price-alt { font-size: 11px; color: #9ca3af; white-space: nowrap; margin-top: 1px; }
+        .plan-card-badge {
+            display: inline-block;
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            color: var(--accent-color);
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-radius: 12px;
+            padding: 2px 10px;
+            white-space: nowrap;
+        }
+
+        .settings-field-label { font-weight: var(--fw-body-semibold); font-size: var(--fs-body); color: #1a1a1a; }
+        .settings-avatar-wrap { position: relative; width: 64px; height: 64px; flex-shrink: 0; }
+        .settings-avatar-upload {
+            width: 64px; height: 64px; border-radius: 50%;
+            cursor: pointer; border: none; padding: 0; background: none;
+            display: block; position: relative; overflow: hidden;
+        }
+        .settings-avatar-upload .nav-avatar { width: 64px; height: 64px; font-size: 22px; }
+        .settings-avatar-upload::after {
+            content: '✎';
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(0,0,0,0.45); color: #fff; font-size: 18px;
+            border-radius: 50%;
+            opacity: 0; transition: opacity 0.15s;
+        }
+        .settings-avatar-upload:hover::after { opacity: 1; }
+        .settings-avatar-remove {
+            position: absolute; top: -2px; right: -2px;
+            width: 20px; height: 20px; border-radius: 50%;
+            background: #1a1a1a; color: #fff; border: 2px solid #fff;
+            font-size: 11px; line-height: 1; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .settings-modal-box { flex-direction: column; height: auto; max-height: 85vh; width: 100%; }
+            .settings-sidebar { width: 100%; flex-direction: row; overflow-x: auto; border-right: none; border-bottom: 1px solid #e5e7eb; padding: 10px 0; }
+            .settings-nav-item { width: auto; white-space: nowrap; padding: 8px 14px; }
+            .settings-nav-item.active { box-shadow: inset 0 -3px 0 var(--accent-color); }
+        }
+
+        /* ── HISTORY MODAL ── */
+        #nktgHistoryModal {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .history-modal-box {
+            background: #fff;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 560px;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            overflow: hidden;
+            font-family: var(--font-family);
+        }
+        .history-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-bottom: 1px solid #e5e7eb;
+            flex-shrink: 0;
+        }
+        .history-modal-header h2 {
+            margin: 0;
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-body-semibold);
+            color: #1a1a1a;
+        }
+        .history-modal-header-actions {
+            display: flex; gap: 8px; align-items: center;
+        }
+        .history-btn-clear {
+            background: none; border: 1px solid #e5e7eb;
+            border-radius: 6px; padding: 4px 10px;
+            font-size: var(--fs-small); color: #9ca3af; cursor: pointer;
+        }
+        .history-btn-clear:hover { color: #dc2626; border-color: #dc2626; }
+        .history-modal-close {
+            background: none; border: none;
+            font-size: var(--fs-display); cursor: pointer;
+            color: #9ca3af; line-height: 1; padding: 4px;
+        }
+        .history-modal-close:hover { color: #1a1a1a; }
+        #historyList {
+            overflow-y: auto;
+            flex: 1;
+        }
+        #historyDetail {
+            display: none;
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+        }
+        .history-detail-input {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: var(--fs-body);
+            color: #374151;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            max-height: 160px;
+            overflow-y: auto;
+        }
+        .history-detail-label {
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .history-back-btn {
+            background: none; border: 1px solid #e5e7eb;
+            border-radius: 6px; padding: 5px 12px;
+            font-size: var(--fs-small); color: #6b7280; cursor: pointer;
+            margin-bottom: 14px;
+        }
+        .history-back-btn:hover { background: #f3f4f6; }
+    </style>
+</head>
+<body>
+
+<!-- Desktop Nav -->
+<nav class="nktg-nav-desktop" id="navDesktop">
+    <div class="nktg-brand-row">
+        <div class="nktg-brand-title" id="homeBtn">NKTg AI for Organizers</div>
+        <button class="nktg-sidebar-toggle" id="sidebarToggleBtn" title="Đóng/mở sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="9" y1="3" x2="9" y2="21"/>
+            </svg>
+        </button>
+    </div>
+    <button class="nav-item" id="newChatBtn">
+        <span class="nav-icon">+</span>
+        <span data-i18n="nav.newChat">New chat</span>
+    </button>
+    <button class="nav-item">
+        <span class="nav-icon">📖</span>
+        <span data-i18n="nav.guide">Guide</span>
+    </button>
+    <!-- History section -->
+    <div class="history-section-label" id="historyToggleBtn" data-history-btn>
+        <span data-i18n="nav.history">History</span>
+        <span id="historyChevron">∨</span>
+    </div>
+    <div id="historyDropdown" style="display:flex; flex-direction:column; flex:1;">
+        <div class="history-empty" data-i18n="history.empty">Chưa có lịch sử nào</div>
+    </div>
+    <!-- Auth button cố định ở đáy sidebar -->
+    <div class="nav-auth-footer">
+        <div class="nav-auth-row">
+            <button class="nav-item nav-auth-bottom" data-auth-btn data-logged-in="0">
+                <span class="nav-icon">▤</span>
+                <span class="nav-auth-label" data-i18n="nav.signup">Sign Up / Log in</span>
+            </button>
+            <button class="nav-gear-btn" id="navGearBtn" title="Cài đặt" data-i18n-title="settings.gearTitle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Nút mở lại sidebar khi đã collapse -->
+<button id="sidebarReopenBtn" title="Mở sidebar">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <line x1="9" y1="3" x2="9" y2="21"/>
+    </svg>
+    NKTg AI
+</button>
+
+<script>
+(function(){
+    const toggleBtn  = document.getElementById('sidebarToggleBtn');
+    const reopenBtn  = document.getElementById('sidebarReopenBtn');
+    function collapse() { document.body.classList.add('sidebar-collapsed'); }
+    function expand()   { document.body.classList.remove('sidebar-collapsed'); }
+    toggleBtn?.addEventListener('click', collapse);
+    reopenBtn?.addEventListener('click', expand);
+})();
+</script>
+<!-- Mobile: nút hamburger góc trên trái -->
+<button class="nktg-mobile-hamburger" id="mobileHamburger" aria-label="Mở menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+</button>
+
+<!-- Overlay -->
+<div class="nktg-mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Drawer -->
+<div class="nktg-mobile-drawer" id="mobileDrawer">
+    <!-- Header -->
+    <div class="nktg-mobile-drawer-header">
+        <span class="nktg-mobile-drawer-title">NKTg AI for Organizers</span>
+        <button class="nktg-mobile-drawer-close" id="mobileDrawerClose">✕</button>
+    </div>
+
+    <!-- Nav items -->
+    <button class="nav-item" id="mobileNewChatBtn">
+        <span class="nav-icon">+</span>
+        <span data-i18n="nav.newChat">New chat</span>
+    </button>
+    <button class="nav-item">
+        <span class="nav-icon">📖</span>
+        <span data-i18n="nav.guide">Guide</span>
+    </button>
+
+    <!-- History -->
+    <div class="history-section-label" id="mobileHistoryToggle">
+        <span data-i18n="nav.history">History</span>
+        <span id="mobileHistoryChevron">∨</span>
+    </div>
+    <div id="mobileHistoryDropdown" style="display:flex;flex-direction:column;">
+        <div class="history-empty" data-i18n="history.empty">Chưa có lịch sử nào</div>
+    </div>
+
+    <!-- Auth footer -->
+    <div class="nktg-mobile-drawer-footer">
+        <div class="nav-auth-row">
+            <button class="nav-auth-bottom" data-auth-btn data-logged-in="0">
+                <span class="nav-icon">▤</span>
+                <span data-i18n="nav.signup">Sign Up / Log in</span>
+            </button>
+            <button class="nav-gear-btn" title="Cài đặt" data-i18n-title="settings.gearTitle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+(function(){
+    const hamburger = document.getElementById('mobileHamburger');
+    const overlay   = document.getElementById('mobileOverlay');
+    const drawer    = document.getElementById('mobileDrawer');
+    const closeBtn  = document.getElementById('mobileDrawerClose');
+
+    function openDrawer()  { drawer.classList.add('open'); overlay.classList.add('open'); }
+    function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('open'); }
+
+    hamburger?.addEventListener('click', openDrawer);
+    overlay?.addEventListener('click', closeDrawer);
+    closeBtn?.addEventListener('click', closeDrawer);
+
+    // New chat
+    document.getElementById('mobileNewChatBtn')?.addEventListener('click', () => {
+        closeDrawer();
+        document.getElementById('outputPanel') && (document.getElementById('outputPanel').innerHTML = '');
+        const ta = document.getElementById('queryInput');
+        if (ta) { ta.value = ''; ta.dispatchEvent(new Event('input', { bubbles: true })); }
+        const fi = document.getElementById('fileInput');
+        if (fi) fi.value = '';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // History toggle trong drawer
+    document.getElementById('mobileHistoryToggle')?.addEventListener('click', () => {
+        const dd = document.getElementById('mobileHistoryDropdown');
+        const ch = document.getElementById('mobileHistoryChevron');
+        if (!dd) return;
+        const open = dd.style.display !== 'none';
+        dd.style.display = open ? 'none' : 'flex';
+        dd.style.flexDirection = 'column';
+        if (ch) ch.textContent = open ? '∧' : '∨';
+        // Sync với historyDropdown chính
+        if (!open && window._nktgRenderHistory) {
+            const main = document.getElementById('historyDropdown');
+            if (main) dd.innerHTML = main.innerHTML;
+        }
+    });
+})();
+</script>
+
+<!-- Giữ lại nav mobile cũ (ẩn trên mobile, chỉ dùng logic) -->
+<nav class="nktg-nav-mobile" id="navMobile" style="display:none!important">
+    <button class="nav-item active">
+        <span class="nav-icon">⌂</span>
+        <span>Home</span>
+    </button>
+    <button class="nav-item" data-history-btn>
+        <span class="nav-icon">◷</span>
+        <span>History</span>
+    </button>
+    <button class="nav-item">
+        <span class="nav-icon">📖</span>
+        <span>Guide</span>
+    </button>
+    <button class="nav-item" data-auth-btn data-logged-in="0">
+        <span class="nav-icon">▤</span>
+        <span>Sign Up / Log in</span>
+    </button>
+</nav>
+
+<script>
+(function(){
+    function initNav(navId) {
+        const nav = document.getElementById(navId);
+        if (!nav) return;
+        const items = nav.querySelectorAll('.nav-item');
+        items.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Nút auth và history tự xử lý modal — không toggle active
+                if (btn.dataset.authBtn !== undefined || btn.dataset.historyBtn !== undefined) return;
+                items.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    }
+
+    // Brand title "NKTg AI for Organizers" — hoạt động như nút Home cũ
+    document.getElementById('homeBtn')?.addEventListener('click', () => {
+        document.querySelectorAll('#navDesktop .nav-item').forEach(b => b.classList.remove('active'));
+        // Scroll lên đầu
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    initNav('navDesktop');
+    initNav('navMobile');
+
+    // Logo tĩnh cho New chat — vẽ 1 lần, giống trạng thái galaxy chưa chọn mode
+    (function() {
+        const canvas = document.getElementById('newChatMini');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const W = 22, H = 22, cx = W/2, cy = H/2;
+        // disc glow
+        const g = ctx.createRadialGradient(cx,cy,0,cx,cy,5);
+        g.addColorStop(0,'rgba(255,160,60,0.95)');
+        g.addColorStop(0.5,'rgba(100,200,220,0.4)');
+        g.addColorStop(1,'rgba(0,0,0,0)');
+        ctx.fillStyle=g; ctx.beginPath(); ctx.ellipse(cx,cy,8,3,0,0,Math.PI*2); ctx.fill();
+        // vertical beam
+        const v = ctx.createLinearGradient(cx,cy-9,cx,cy+9);
+        v.addColorStop(0,'rgba(180,140,255,0)');
+        v.addColorStop(0.5,'rgba(200,170,255,0.7)');
+        v.addColorStop(1,'rgba(180,140,255,0)');
+        ctx.fillStyle=v; ctx.fillRect(cx-1,cy-9,2,18);
+        // particles tĩnh — cố định góc, không xoay
+        const pts = Array.from({length: 20}, (_, i) => ({
+            a: (i/20)*Math.PI*2, r: 3+(i%3)*2, orange: i%2===0
+        }));
+        pts.forEach(p => {
+            const x = cx + Math.cos(p.a)*p.r;
+            const y = cy + Math.sin(p.a)*p.r*0.35;
+            ctx.beginPath(); ctx.arc(x,y,0.9,0,Math.PI*2);
+            ctx.fillStyle = p.orange ? 'rgba(255,140,40,0.9)' : 'rgba(140,100,255,0.8)';
+            ctx.fill();
+        });
+    })();
+
+    // New Chat button
+    document.getElementById('newChatBtn')?.addEventListener('click', () => {
+        // Active New chat, bỏ active Home
+        document.querySelectorAll('#navDesktop .nav-item').forEach(b => b.classList.remove('active'));
+        document.getElementById('newChatBtn')?.classList.add('active');
+        // Xóa output
+        const outputPanel = document.getElementById('outputPanel');
+        if (outputPanel) outputPanel.innerHTML = '';
+        // Xóa textarea
+        const textarea = document.getElementById('queryInput');
+        if (textarea) {
+            textarea.value = '';
+            textarea.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+        // Xóa file input
+        const fileInput = document.getElementById('fileInput');
+        if (fileInput) fileInput.value = '';
+        const fileStatus = document.getElementById('fileUploadStatus');
+        if (fileStatus) { fileStatus.textContent = ''; fileStatus.className = 'file-upload-status'; }
+        // Bỏ active item history
+        document.querySelectorAll('.history-item.active').forEach(el => el.classList.remove('active'));
+        // Scroll lên đầu
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+</script>
+
+<div class="container">
+    <div class="status-badge" id="stateBadge" style="display:none;">PIPELINE: IDLE</div>
+
+    <div id="scrollArea">
+
+    <!-- Mode Selector -->
+    <div class="form-group mode-selector-wrap">
+        <div class="mode-selector-inner">
+            <button id="btnTraction" onclick="nktgSelectMode('traction')" data-i18n="mode.extraction" style="
+                background: transparent;
+                border: 1.5px solid #d1d5db;
+                border-radius: 999px;
+                color: #6b7280;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 10px 36px;
+                cursor: pointer;
+                transition: color 0.2s, border-color 0.2s;
+            ">Extraction</button>
+
+            <canvas id="nktgGalaxy" width="173" height="133" style="flex-shrink:0; visibility:hidden;"></canvas>
+
+            <button id="btnAddition" onclick="nktgSelectMode('addition')" data-i18n="mode.addition" style="
+                background: transparent;
+                border: 1.5px solid #d1d5db;
+                border-radius: 999px;
+                color: #6b7280;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 10px 36px;
+                cursor: pointer;
+                transition: color 0.2s, border-color 0.2s;
+            ">Addition</button>
+        </div>
+    </div>
+
+    <script>
+    (function(){
+        const canvas = document.getElementById('nktgGalaxy');
+        const ctx = canvas.getContext('2d');
+        const W = 173, H = 133, CX = W/2, CY = H/2;
+        let currentMode = null;
+        const RX=63, RY=16;
+        let animAngle=0, animRaf=null;
+
+        function drawGalaxy() {
+            ctx.clearRect(0,0,W,H);
+            // Đĩa trái cam
+            const gL=ctx.createRadialGradient(CX-10,CY,1,CX,CY,RX);
+            gL.addColorStop(0,'rgba(255,220,160,0.85)'); gL.addColorStop(0.15,'rgba(255,170,70,0.6)');
+            gL.addColorStop(0.45,'rgba(180,70,20,0.4)'); gL.addColorStop(1,'rgba(150,60,10,0)');
+            ctx.save(); ctx.beginPath(); ctx.ellipse(CX,CY,RX,RY,0,Math.PI/2,Math.PI*3/2);
+            ctx.fillStyle=gL; ctx.fill(); ctx.restore();
+            // Đĩa phải cyan
+            const gR=ctx.createRadialGradient(CX+10,CY,1,CX,CY,RX);
+            gR.addColorStop(0,'rgba(180,240,250,0.85)'); gR.addColorStop(0.15,'rgba(60,210,230,0.6)');
+            gR.addColorStop(0.45,'rgba(20,110,150,0.4)'); gR.addColorStop(1,'rgba(10,70,100,0)');
+            ctx.save(); ctx.beginPath(); ctx.ellipse(CX,CY,RX,RY,0,-Math.PI/2,Math.PI/2);
+            ctx.fillStyle=gR; ctx.fill(); ctx.restore();
+            // Plasma nón trên
+            const gPT=ctx.createLinearGradient(CX,CY,CX,CY-43);
+            gPT.addColorStop(0,'rgba(180,140,255,0.5)'); gPT.addColorStop(0.5,'rgba(130,70,230,0.25)'); gPT.addColorStop(1,'rgba(100,40,200,0.03)');
+            ctx.save(); ctx.beginPath(); ctx.moveTo(CX-2,CY); ctx.lineTo(CX+2,CY); ctx.lineTo(CX+11,CY-43); ctx.lineTo(CX-11,CY-43); ctx.closePath(); ctx.fillStyle=gPT; ctx.fill(); ctx.restore();
+            // Plasma nón dưới
+            const gPB=ctx.createLinearGradient(CX,CY,CX,CY+43);
+            gPB.addColorStop(0,'rgba(180,140,255,0.5)'); gPB.addColorStop(0.5,'rgba(130,70,230,0.25)'); gPB.addColorStop(1,'rgba(100,40,200,0.03)');
+            ctx.save(); ctx.beginPath(); ctx.moveTo(CX-2,CY); ctx.lineTo(CX+2,CY); ctx.lineTo(CX+11,CY+43); ctx.lineTo(CX-11,CY+43); ctx.closePath(); ctx.fillStyle=gPB; ctx.fill(); ctx.restore();
+            // Lõi
+            const gC=ctx.createRadialGradient(CX,CY,0,CX,CY,5);
+            gC.addColorStop(0,'rgba(255,255,255,1)'); gC.addColorStop(0.5,'rgba(220,200,255,0.8)'); gC.addColorStop(1,'rgba(160,120,255,0)');
+            ctx.beginPath(); ctx.ellipse(CX,CY,5,2.5,0,0,Math.PI*2); ctx.fillStyle=gC; ctx.fill();
+            // Xoắn ốc theo mode
+            if(currentMode) drawSpiral(currentMode, animAngle);
+        }
+
+        function drawArrow(p0,p1,col){
+            const dx=p1.x-p0.x,dy=p1.y-p0.y,l=Math.sqrt(dx*dx+dy*dy);
+            if(l<1)return;
+            const ux=dx/l,uy=dy/l,px=-uy,py=ux;
+            const mx=(p0.x+p1.x)/2,my=(p0.y+p1.y)/2;
+            ctx.save(); ctx.beginPath();
+            ctx.moveTo(mx-ux*5+px*2.5,my-uy*5+py*2.5); ctx.lineTo(mx+ux*1.5,my+uy*1.5); ctx.lineTo(mx-ux*5-px*2.5,my-uy*5-py*2.5);
+            ctx.strokeStyle=col; ctx.lineWidth=0.9; ctx.lineCap='round'; ctx.lineJoin='round'; ctx.stroke(); ctx.restore();
+        }
+
+        function spt(f,t){ const r=3+(1-f)*52, a=-(f*Math.PI*2*1.5)+t; return{x:CX+r*Math.cos(a),y:CY+r*Math.sin(a)*0.28}; }
+        function sptAdd(f,t){ const r=3+f*52, a=-(f*Math.PI*2*1.5)-t; return{x:CX+r*Math.cos(a),y:CY+r*Math.sin(a)*0.28}; }
+
+        function drawSpiral(m, t) {
+            const isExt = m === 'traction';
+            const s=200, pts=[];
+            for(let i=0;i<=s;i++) pts.push(isExt ? spt(i/s,t) : sptAdd(i/s,t));
+            ctx.save(); ctx.beginPath(); ctx.moveTo(pts[0].x,pts[0].y);
+            for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x,pts[i].y);
+            ctx.strokeStyle = isExt ? 'rgba(190,55,15,0.65)' : 'rgba(30,140,60,0.65)';
+            ctx.lineWidth=0.9; ctx.lineCap='round';
+            ctx.shadowColor = isExt ? 'rgba(190,55,15,0.2)' : 'rgba(30,140,60,0.2)';
+            ctx.shadowBlur=2; ctx.stroke(); ctx.restore();
+            const i = Math.floor(s*(isExt?0.32:0.55));
+            const col = isExt ? 'rgba(190,55,15,.9)' : 'rgba(30,140,60,.9)';
+            drawArrow(pts[i], pts[i+8], col);
+        }
+
+        function startAnim(){
+            if(animRaf) cancelAnimationFrame(animRaf);
+            function loop(){
+                drawGalaxy();
+                if(currentMode==='traction') animAngle-=0.014;
+                else if(currentMode==='addition') animAngle+=0.014;
+                animRaf=requestAnimationFrame(loop);
+            }
+            loop();
+        }
+        function stopAnim(){
+            if(animRaf){cancelAnimationFrame(animRaf);animRaf=null;}
+            animAngle=0; drawGalaxy();
+        }
+
+        window.nktgSelectMode = function(m) {
+            if(currentMode === m) {
+                currentMode = null;
+                document.getElementById('btnTraction').style.color = '#6b7280';
+                document.getElementById('btnTraction').style.borderColor = '#d1d5db';
+                document.getElementById('btnAddition').style.color = '#6b7280';
+                document.getElementById('btnAddition').style.borderColor = '#d1d5db';
+                stopAnim(); return;
+            }
+            const w = document.getElementById('modeWarning');
+            if(w) w.style.display = 'none';
+            currentMode = m;
+            document.getElementById('btnTraction').style.color = '#6b7280';
+            document.getElementById('btnTraction').style.borderColor = '#d1d5db';
+            document.getElementById('btnAddition').style.color = '#6b7280';
+            document.getElementById('btnAddition').style.borderColor = '#d1d5db';
+            if(m === 'traction') {
+                document.getElementById('btnTraction').style.color = '#E2533A';
+                document.getElementById('btnTraction').style.borderColor = '#E2533A';
+            } else {
+                document.getElementById('btnAddition').style.color = '#4A9B2F';
+                document.getElementById('btnAddition').style.borderColor = '#4A9B2F';
+            }
+            startAnim();
+        };
+
+        window.nktgGetMode = function() { return currentMode; };
+        drawGalaxy();
+    })();
+    </script>
+
+    <div id="outputPanel" style="margin-top: 5px;"></div>
+
+    </div><!-- /scrollArea -->
+
+    <button id="scrollToBottomBtn" title="Đến cuối kết quả" aria-label="Đến cuối kết quả">↓</button>
+
+    <div id="inputDock">
+    <div class="input-dock-inner">
+
+    <div id="modeWarning" data-i18n="mode.warning" style="
+        display: none;
+        margin: 0 0 12px 0;
+        padding: 8px 14px;
+        background: #fef3c7;
+        border: 1px solid #f59e0b;
+        border-radius: 6px;
+        color: #d97706;
+        font-size: var(--fs-body);
+        font-weight: var(--fw-body-semibold);
+    ">⚠ Please select Extraction or Addition before running the pipeline.</div>
+
+    <div id="planLimitWarning" style="
+        display: none;
+        margin: 0 0 12px 0;
+        padding: 8px 14px;
+        background: #fef2f2;
+        border: 1px solid #fca5a5;
+        border-radius: 6px;
+        color: #dc2626;
+        font-size: var(--fs-body);
+        font-weight: var(--fw-body-semibold);
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+    ">
+        <span data-i18n="plan.limitReached">You've reached today's input limit.</span>
+        <button id="planUpgradeBtn" data-i18n="plan.upgradeNow" style="
+            background: #dc2626;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 14px;
+            font-size: var(--fs-small);
+            font-weight: var(--fw-body-semibold);
+            cursor: pointer;
+            white-space: nowrap;
+        ">Upgrade</button>
+    </div>
+
+    <!-- Input Box -->
+    <div class="form-group">
+        <div id="charLimitWarning" class="limit-reached" data-i18n="charLimit.warning" style="display:none; margin-bottom:8px; font-size: var(--fs-small); font-weight: var(--fw-body-semibold); color: var(--danger-color); font-family: var(--font-family-mono);">
+            ⚠ Đã vượt giới hạn 21000 ký tự
+        </div>
+
+        <div id="inputWrap" style="
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        ">
+            <textarea id="queryInput" maxlength="21000"
+                placeholder="Enter text or click [+] to attach files (.txt, .docx, .pdf, .png, .jpg, .webp)..."
+                data-i18n-placeholder="queryInput.placeholder"
+                style="
+                    width: 100%;
+                    min-height: 120px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: var(--text-color);
+                    font-size: var(--fs-body);
+                    font-family: inherit;
+                    padding: 12px 14px 48px 14px;
+                    box-sizing: border-box;
+                    resize: vertical;
+                    line-height: 1.6;
+                "
+            ></textarea>
+
+            <div style="
+                position: absolute;
+                bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px 10px;
+                pointer-events: none;
+            ">
+                <label for="fileInput" id="fileUploadBtn" title="Attach file" aria-label="Attach file" style="
+                    pointer-events: all;
+                    background: transparent;
+                    border: 1px solid var(--border-color);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    display: flex; align-items: center; justify-content: center;
+                    width: 30px; height: 30px;
+                    color: var(--muted-color);
+                    font-size: var(--fs-display); line-height: 1;
+                    transition: border-color 0.2s, color 0.2s;
+                    user-select: none;
+                ">+</label>
+
+                <button id="sendArrow" title="Submit" aria-label="Submit" style="
+                    pointer-events: all;
+                    background: transparent;
+                    border: 1px solid #d1d5db;
+                    border-radius: 6px;
+                    cursor: default;
+                    display: flex; align-items: center; justify-content: center;
+                    width: 30px; height: 30px;
+                    color: #9ca3af;
+                    font-size: var(--fs-subtitle); line-height: 1;
+                    opacity: 0.35;
+                    transition: color 0.2s, border-color 0.2s, opacity 0.2s;
+                ">↑</button>
+            </div>
+        </div>
+
+        <input type="file" id="fileInput" class="file-upload-input" accept=".txt,.docx,.pdf,.png,.jpg,.jpeg,.webp,.bmp">
+        <div class="file-upload-status" id="fileUploadStatus" style="margin-top:6px;"></div>
+    </div>
+
+    <script>
+    (function(){
+        const ta      = document.getElementById('queryInput');
+        const wrap    = document.getElementById('inputWrap');
+        const arrow   = document.getElementById('sendArrow');
+        const plusBtn = document.getElementById('fileUploadBtn');
+        const COLORS  = { traction: '#E2533A', addition: '#4A9B2F' };
+        const fileInput = document.getElementById('fileInput');
+
+        function updateArrow() {
+            const hasText = ta.value.trim().length > 0;
+            const hasFile = fileInput && fileInput.files && fileInput.files.length > 0;
+            const mode    = typeof window.nktgGetMode === 'function' ? window.nktgGetMode() : null;
+            const color   = mode ? COLORS[mode] : null;
+            const warning = document.getElementById('modeWarning');
+            const charLimitWarning = document.getElementById('charLimitWarning');
+            if(charLimitWarning) {
+                charLimitWarning.style.display = ta.value.length > 21000 ? 'block' : 'none';
+            }
+            if((hasText || hasFile) && !mode) {
+                if(warning) warning.style.display = 'block';
+            } else {
+                if(warning) warning.style.display = 'none';
+            }
+            if((hasText || hasFile) && color) {
+                arrow.style.color       = color;
+                arrow.style.borderColor = color;
+                arrow.style.opacity     = '1';
+                arrow.style.cursor      = 'pointer';
+            } else {
+                arrow.style.color       = '#9ca3af';
+                arrow.style.borderColor = '#d1d5db';
+                arrow.style.opacity     = '0.35';
+                arrow.style.cursor      = 'default';
+            }
+        }
+
+        ta.addEventListener('input', updateArrow);
+        fileInput.addEventListener('change', updateArrow);
+        ta.addEventListener('focus', () => {
+            wrap.style.borderColor = 'var(--accent-color)';
+            wrap.style.boxShadow   = '0 0 0 3px rgba(217,119,6,0.2)';
+        });
+        ta.addEventListener('blur', () => {
+            wrap.style.borderColor = 'var(--border-color)';
+            wrap.style.boxShadow   = 'none';
+        });
+        plusBtn.addEventListener('mouseover', () => {
+            plusBtn.style.borderColor = 'var(--accent-color)';
+            plusBtn.style.color       = 'var(--accent-color)';
+        });
+        plusBtn.addEventListener('mouseout', () => {
+            plusBtn.style.borderColor = 'var(--border-color)';
+            plusBtn.style.color       = 'var(--muted-color)';
+        });
+        const origSelectMode = window.nktgSelectMode;
+        window.nktgSelectMode = function(m) {
+            origSelectMode(m);
+            updateArrow();
+        };
+        updateArrow();
+    })();
+    </script>
+
+    </div><!-- /input-dock-inner -->
+    </div><!-- /inputDock -->
+</div><!-- /container -->
+
+<script>
+(function(){
+    // ── (1) Đồng bộ padding-bottom của #scrollArea với chiều cao thực
+    // của #inputDock — tránh nội dung (vd. footer các nút) bị che khi
+    // textarea resize hoặc khi modeWarning/fileUploadStatus xuất hiện.
+    const scrollArea   = document.getElementById('scrollArea');
+    const inputDock    = document.getElementById('inputDock');
+    const scrollBtn    = document.getElementById('scrollToBottomBtn');
+    if (!scrollArea || !inputDock) return;
+
+    const EXTRA_GAP = 20; // khoảng đệm thêm cho thoải mái
+
+    function syncLayout() {
+        const dockHeight = inputDock.offsetHeight;
+        scrollArea.style.paddingBottom = (dockHeight + EXTRA_GAP) + 'px';
+
+        // Đặt nút cuộn-xuống ngay phía trên #inputDock
+        if (scrollBtn) {
+            scrollBtn.style.bottom = (dockHeight + 12) + 'px';
+        }
+        updateScrollBtnVisibility();
+    }
+
+    // ── (2) Hiện/ẩn nút cuộn-xuống kiểu ChatGPT:
+    // hiện khi trang chưa cuộn tới cuối, ẩn khi đã ở cuối.
+    const SCROLL_THRESHOLD = 80; // px còn lại tới đáy thì coi như "đã ở cuối"
+
+    function isNearBottom() {
+        const scrollY    = window.scrollY || window.pageYOffset;
+        const viewport   = window.innerHeight;
+        const fullHeight = document.documentElement.scrollHeight;
+        return (fullHeight - (scrollY + viewport)) < SCROLL_THRESHOLD;
+    }
+
+    function updateScrollBtnVisibility() {
+        if (!scrollBtn) return;
+        const hasOutput = document.getElementById('outputPanel')?.children.length > 0;
+        if (hasOutput && !isNearBottom()) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    }
+
+    if (scrollBtn) {
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+        });
+    }
+
+    window.addEventListener('scroll', updateScrollBtnVisibility);
+    window.addEventListener('resize', syncLayout);
+
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncLayout).observe(inputDock);
+    }
+
+    // Quan sát thay đổi nội dung (textarea resize, output mới, file status...)
+    const mo = new MutationObserver(syncLayout);
+    mo.observe(inputDock, { attributes: true, childList: true, subtree: true });
+    mo.observe(document.getElementById('outputPanel'), { childList: true });
+
+    syncLayout();
+})();
+</script>
+
+<script type="module" src="./main.js"></script>
+<script type="module" src="./auth.js"></script>
+<script type="module" src="./history-manager.js"></script>
+<script type="module" src="./language.js"></script>
+<script type="module" src="./plan.js"></script>
+<script type="module" src="./vietqr.js"></script>
+<script type="module" src="./settings.js"></script>
+<!-- History Modal -->
+<div id="nktgHistoryModal">
+    <div class="history-modal-box">
+        <div class="history-modal-header">
+            <h2>📋 Lịch sử</h2>
+            <div class="history-modal-header-actions">
+                <button class="history-btn-clear" id="historyClearBtn">Xóa tất cả</button>
+                <button class="history-modal-close" id="historyModalClose">✕</button>
+            </div>
+        </div>
+
+        <!-- Danh sách -->
+        <div id="historyListPanel" style="display:block; flex:1; overflow:hidden; display:flex; flex-direction:column;">
+            <div id="historyList" style="flex:1; overflow-y:auto;"></div>
+        </div>
+
+        <!-- Chi tiết -->
+        <div id="historyDetail">
+            <button class="history-back-btn" id="historyBackBtn">← Quay lại</button>
+            <div style="font-size: var(--fs-body); font-weight: var(--fw-body-semibold); color:#1a1a1a; margin-bottom:12px;" id="historyDetailTitle"></div>
+            <div class="history-detail-label">Văn bản đầu vào</div>
+            <div class="history-detail-input"><pre id="historyDetailInput" style="margin:0;font-family:inherit;font-size: var(--fs-body);"></pre></div>
+            <div class="history-detail-label">Kết quả</div>
+            <div id="historyDetailOutput"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Auth Modal -->
+<div id="nktgAuthModal">
+    <div class="auth-modal-box">
+        <div class="auth-modal-header">
+            <h2 data-i18n="auth.title">Tài khoản NKTg</h2>
+            <button class="auth-modal-close" id="authModalClose" title="Đóng" data-i18n-title="common.close">✕</button>
+        </div>
+
+        <div class="auth-tabs">
+            <button class="auth-tab auth-tab-active" id="authTabEmail" data-i18n="auth.tabEmail">Email</button>
+            <button class="auth-tab" id="authTabGoogle" data-i18n="auth.tabGoogle">Google</button>
+        </div>
+
+        <div class="auth-panel">
+            <div id="authMessage"></div>
+
+            <!-- Email Panel -->
+            <div id="authPanelEmail">
+                <!-- Login -->
+                <div id="emailLoginPanel">
+                    <input class="auth-input" type="email"    id="loginEmail"    placeholder="Email" data-i18n-placeholder="auth.emailPlaceholder" autocomplete="email">
+                    <input class="auth-input" type="password" id="loginPassword" placeholder="Mật khẩu" data-i18n-placeholder="auth.passwordPlaceholder" autocomplete="current-password">
+                    <button class="auth-btn-primary" id="emailLoginBtn" data-i18n="auth.loginBtn">Đăng nhập</button>
+                    <div class="auth-switch-link">
+                        <span data-i18n="auth.noAccount">Chưa có tài khoản?</span>
+                        <button id="toRegisterBtn" data-i18n="auth.registerNow">Đăng ký ngay</button>
+                    </div>
+                </div>
+                <!-- Register -->
+                <div id="emailRegisterPanel" style="display:none;">
+                    <input class="auth-input" type="text"     id="registerName"     placeholder="Họ và tên" data-i18n-placeholder="auth.fullNamePlaceholder" autocomplete="name">
+                    <input class="auth-input" type="email"    id="registerEmail"    placeholder="Email" data-i18n-placeholder="auth.emailPlaceholder" autocomplete="email">
+                    <input class="auth-input" type="password" id="registerPassword" placeholder="Mật khẩu (tối thiểu 6 ký tự)" data-i18n-placeholder="auth.passwordMinPlaceholder" autocomplete="new-password">
+                    <input class="auth-input" type="password" id="registerConfirm"  placeholder="Xác nhận mật khẩu" data-i18n-placeholder="auth.confirmPasswordPlaceholder" autocomplete="new-password">
+                    <button class="auth-btn-primary" id="emailRegisterBtn" data-i18n="auth.registerBtn">Tạo tài khoản</button>
+                    <div class="auth-switch-link">
+                        <span data-i18n="auth.haveAccount">Đã có tài khoản?</span>
+                        <button id="toLoginBtn" style="display:none;" data-i18n="auth.loginNow">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Panel -->
+            <div id="authPanelGoogle" style="display:none;">
+                <div id="googleSignInBtn"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- VietQR Payment Modal -->
+<div id="nktgVietQRModal">
+    <div class="vietqr-modal-box">
+        <div class="auth-modal-header">
+            <h2 data-i18n="vietqr.title">Thanh toán qua VietQR</h2>
+            <button class="auth-modal-close" id="vietqrModalClose" title="Đóng" data-i18n-title="common.close">✕</button>
+        </div>
+        <div class="vietqr-modal-body">
+            <div id="vietqrLoading" data-i18n="vietqr.creatingOrder" style="padding: 30px 0; color:#6b7280;">Đang tạo đơn hàng...</div>
+            <div id="vietqrContent" style="display:none;">
+                <img class="vietqr-image" id="vietqrImage" src="" alt="VietQR">
+                <div class="vietqr-amount" id="vietqrAmount"></div>
+                <div class="vietqr-code-box">
+                    <div class="vietqr-code-label" data-i18n="vietqr.transferContent">Nội dung chuyển khoản (giữ nguyên):</div>
+                    <div class="vietqr-code-value" id="vietqrCode"></div>
+                </div>
+                <div class="vietqr-status" id="vietqrStatus">
+                    <span class="vietqr-spinner"></span>
+                    <span data-i18n="vietqr.waiting">Đang chờ thanh toán...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Settings Modal -->
+<div id="nktgSettingsModal">
+    <div class="settings-modal-box">
+        <div class="settings-sidebar">
+            <div class="settings-sidebar-title" data-i18n="settings.title">Cài đặt</div>
+            <button class="settings-nav-item" data-settings-tab="general">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <span>General</span>
+            </button>
+            <button class="settings-nav-item active" data-settings-tab="account">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Account</span>
+            </button>
+            <button class="settings-nav-item" data-settings-tab="plan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                <span>Plan</span>
+            </button>
+            <button class="settings-nav-item" data-settings-tab="language">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>Language</span>
+            </button>
+        </div>
+        <div class="settings-content">
+            <button class="settings-modal-close" id="settingsModalClose" title="Đóng" data-i18n-title="common.close">✕</button>
+
+            <div class="settings-panel active" id="settingsPanel-account">
+                <div id="settingsAccountContent"><!-- render bởi settings.js --></div>
+            </div>
+
+            <div class="settings-panel" id="settingsPanel-plan">
+                <div id="settingsPlanContent"><!-- render bởi settings.js --></div>
+            </div>
+
+            <div class="settings-panel" id="settingsPanel-general">
+                <div id="settingsGeneralContent"><!-- render bởi settings.js --></div>
+            </div>
+
+            <div class="settings-panel" id="settingsPanel-language">
+                <div id="settingsLanguageContent"><!-- render bởi language.js --></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Strip font/style khi paste vào textarea — chuẩn hóa về Inter như các AI khác -->
+<script>
+(function(){
+    document.addEventListener('DOMContentLoaded', function() {
+        const textarea = document.getElementById('queryInput');
+        if (!textarea) return;
+
+        textarea.addEventListener('paste', function(e) {
+            e.preventDefault();
+
+            // Lấy text thuần — bỏ hết HTML, font, color, style
+            const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+
+            // Insert vào vị trí con trỏ
+            const start = textarea.selectionStart;
+            const end   = textarea.selectionEnd;
+            const current = textarea.value;
+            textarea.value = current.slice(0, start) + text + current.slice(end);
+
+            // Di chuyển con trỏ về sau text vừa paste
+            textarea.selectionStart = textarea.selectionEnd = start + text.length;
+
+            // Trigger input event để các handler khác biết có thay đổi
+            textarea.dispatchEvent(new Event('input', { bubbles: true }));
+        });
+    });
+})();
+</script>
+<div class="history-rename-modal" id="historyRenameModal">
+    <div class="history-rename-box">
+        <h3 data-i18n="history.rename">Đổi tên</h3>
+        <input class="history-rename-input" id="historyRenameInput" type="text" placeholder="Nhập tên mới..." data-i18n-placeholder="history.renamePlaceholder">
+        <div class="history-rename-actions">
+            <button class="history-rename-cancel" id="historyRenameCancel" data-i18n="account.cancel">Huỷ</button>
+            <button class="history-rename-save" id="historyRenameSave" data-i18n="account.save">Lưu</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── GUIDE MODAL ── -->
+<style>
+/* Guide Modal */
+#nktgGuideModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9000;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#nktgGuideModal.open { display: flex; }
+
+.guide-box {
+    background: #fff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    overflow: hidden;
+    margin: auto;
+    font-family: var(--font-family);
+}
+
+/* Header */
+.guide-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    gap: 12px;
+}
+.guide-header-title {
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-display);
+    color: var(--accent-color);
+    margin: 0;
+    flex: 1;
+}
+.guide-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+/* Language dropdown */
+.guide-lang-wrap {
+    position: relative;
+}
+.guide-lang-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body-semibold);
+    color: var(--text-color);
+    transition: border-color 0.15s, background 0.15s;
+    white-space: nowrap;
+}
+.guide-lang-trigger:hover {
+    border-color: var(--accent-color);
+    background: #fefce8;
+}
+.guide-lang-trigger svg { flex-shrink: 0; }
+
+.guide-lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    min-width: 180px;
+    z-index: 100;
+    overflow: hidden;
+}
+.guide-lang-dropdown.open { display: block; }
+.guide-lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    color: var(--text-color);
+    text-align: left;
+    transition: background 0.12s;
+}
+.guide-lang-option:hover { background: #f9fafb; }
+.guide-lang-option.active {
+    background: #fef3c7;
+    font-weight: var(--fw-body-semibold);
+    color: var(--accent-color);
+}
+.guide-lang-flag { font-size: 18px; line-height: 1; }
+
+/* Close button */
+.guide-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    font-size: var(--fs-display);
+    cursor: pointer;
+    color: var(--muted-color);
+    border-radius: 8px;
+    line-height: 1;
+    transition: background 0.15s, color 0.15s;
+    flex-shrink: 0;
+}
+.guide-close:hover { background: #f3f4f6; color: var(--text-color); }
+
+/* Body */
+.guide-body {
+    padding: 24px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+.guide-lang-panel { display: none; }
+.guide-lang-panel.active { display: block; }
+
+.guide-body h2 {
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-display);
+    color: #111827;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent-color);
+}
+.guide-body h2:first-child { margin-top: 0; }
+.guide-body h3 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body-semibold);
+    color: var(--text-color);
+    margin: 16px 0 6px;
+}
+.guide-body h4 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body-semibold);
+    color: var(--muted-color);
+    margin: 12px 0 4px;
+}
+.guide-body p {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    margin: 8px 0;
+}
+.guide-body ul {
+    margin: 8px 0 8px 20px;
+    padding: 0;
+}
+.guide-body li {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    margin: 4px 0;
+}
+.guide-body strong {
+    font-weight: var(--fw-body-semibold);
+    color: #111827;
+}
+.guide-formula {
+    background: #f9fafb;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: var(--font-family-mono);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    margin: 10px 0;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+.guide-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: var(--fs-small);
+    font-weight: var(--fw-body-semibold);
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.guide-tag.amp    { background: #fef3c7; color: #b45309; }
+.guide-tag.damp   { background: #dbeafe; color: #1d4ed8; }
+.guide-tag.stable { background: #f0fdf4; color: #15803d; }
+
+/* Privacy/WebAssembly block */
+.guide-privacy {
+    margin-top: 16px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+.guide-privacy p {
+    margin: 0 0 8px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    color: #166534;
+}
+.guide-privacy ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.guide-privacy li {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    color: #166534;
+    margin: 4px 0;
+}
+.guide-privacy code {
+    background: #dcfce7;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: var(--font-family-mono);
+    font-size: var(--fs-small);
+    color: #166534;
+}
+
+@media (max-width: 768px) {
+    .guide-body { padding: 16px; }
+    .guide-header { padding: 16px; }
+}
+</style>
+
+<div id="nktgGuideModal">
+  <div class="guide-box">
+
+    <!-- Header -->
+    <div class="guide-header">
+      <h2 class="guide-header-title">📖 NKTg AI Guide</h2>
+      <div class="guide-header-actions">
+
+        <!-- Language dropdown -->
+        <div class="guide-lang-wrap">
+          <button class="guide-lang-trigger" id="guideLangTrigger">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="guideLangLabel">🇺🇸 English</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="guide-lang-dropdown" id="guideLangDropdown">
+            <button class="guide-lang-option active" data-lang="EN"><span class="guide-lang-flag">🇺🇸</span> English</button>
+            <button class="guide-lang-option" data-lang="VI"><span class="guide-lang-flag">🇻🇳</span> Tiếng Việt</button>
+            <button class="guide-lang-option" data-lang="FR"><span class="guide-lang-flag">🇫🇷</span> Français</button>
+            <button class="guide-lang-option" data-lang="DE"><span class="guide-lang-flag">🇩🇪</span> Deutsch</button>
+            <button class="guide-lang-option" data-lang="ES"><span class="guide-lang-flag">🇪🇸</span> Español</button>
+            <button class="guide-lang-option" data-lang="ZH"><span class="guide-lang-flag">🇨🇳</span> 中文</button>
+            <button class="guide-lang-option" data-lang="JA"><span class="guide-lang-flag">🇯🇵</span> 日本語</button>
+            <button class="guide-lang-option" data-lang="RU"><span class="guide-lang-flag">🇷🇺</span> Русский</button>
+          </div>
+        </div>
+
+        <button class="guide-close" id="guideClose">✕</button>
+      </div>
+    </div>
+
+    <!-- Content panels -->
+    <div class="guide-body">
+
+      <!-- ENGLISH -->
+      <div class="guide-lang-panel active" id="guidePanel-EN">
+        <p>NKTg AI is not a summarization tool. It is a specialized <strong>Language Decoding System</strong> that uses physical algorithms to measure semantic energy and extract the <strong>Core Content</strong> — the core logical genetic code of a text.</p>
+        <h2>1. The Nature of Core Content</h2>
+        <p><strong>Core Content</strong> is the sentence with the highest density of executable actions and the most concrete outcome in a text. If removed, the text loses key information that cannot be inferred from the rest.</p>
+        <p>It is an <strong>original sentence</strong> from the source text — not interpreted or altered by subjective reasoning.</p>
+        <h2>2. Philosophy</h2>
+        <h3>Generative AI</h3><p>Reads and reinterprets a text using the AI's own language.</p>
+        <h3>NKTg AI</h3><p>Measures the energy of each word and sentence to identify core content that already exists. Returns the author's original linguistic genetic code without generating new content.</p>
+        <h2>3. Text Structural Genetic Code</h2>
+        <div class="guide-formula">AMP (Amplifying) + DAMP (Damping) + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> Amplifying &gt; 55%</h3>
+        <p>Increasing energy — Actions, Assertions, Execution, Results. Text has a clear focal point; Core Content has high reliability.</p>
+        <h3><span class="guide-tag damp">DAMP</span> Damping &gt; 55%</h3>
+        <p>Decreasing energy — Conditions, Context, Risks, Exceptions, Counterarguments. Text tends toward condition analysis or risk assessment.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3>
+        <p>Balanced state — Technical info, Pure data, Data tables, Descriptive content. A prominent Core Content may not exist.</p>
+        <h2>4. Output Modes</h2>
+        <h3>🧠 Left Brain (Extraction) — Distillation</h3>
+        <h4>Standard</h4><p>Retains the most important sentences by the Golden Ratio. Best for quick reading.</p>
+        <h4>Condensed</h4><p>Removes repetitive or semantically similar sentences. Best for long texts.</p>
+        <h4>Essence</h4><p>Converges to a single Core Content sentence. Recommended when <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Right Brain (Addition) — Expansion</h3>
+        <h4>Refined</h4><p>Preserves content nucleus with minimum necessary context.</p>
+        <h4>Expanded</h4><p>Core Content combined with surrounding relevant context.</p>
+        <h4>Comprehensive (100%)</h4><p>Full text with DAMPING components marked for easy distinction.</p>
+        <h2>5. Value for Experts & Managers</h2>
+        <ul>
+          <li><strong>Quantifiability:</strong> AMP%, DAMP%, Compression%, retained sentences</li>
+          <li><strong>Causality:</strong> Core Content often in Action → Result structures</li>
+          <li><strong>Decision-Making:</strong> Quickly evaluate whether to read, examine, or act</li>
+          <li><strong>Objectivity:</strong> Algorithm-based, not subjective emphasis</li>
+        </ul>
+        <h2>6. Value for General Users</h2>
+        <ul>
+          <li><strong>Read Quickly:</strong> Identify the highest-action-density sentence instantly</li>
+          <li><strong>Evaluate Before Reading:</strong> Observe AMP/DAMP in round 1</li>
+          <li><strong>Objective Comparison:</strong> Compare Core Content across multiple texts</li>
+          <li><strong>Identify Key Points:</strong> Spot conditions, warnings, or risks</li>
+        </ul>
+        <h2>7. Limitations</h2>
+        <p>If <strong>Compression &gt; 90%</strong> in Standard or Refined mode, manually copy or upload a file to ensure input integrity.</p>
+        <p>NKTg AI does not perform well on <strong>handwritten documents</strong> — OCR accuracy drops significantly compared to printed text, which may affect extraction quality.</p>
+        <h2>8. NKTg Law — Variable Inertia Algorithm</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Semantic Potential Energy)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Semantic Kinetic Energy)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>All processing runs directly in the browser via <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>Text <strong>never leaves</strong> the user's device</li>
+                <li>No server, no cloud, no remote database</li>
+                <li>History is stored in <code>localStorage</code> — residing entirely on the user's device</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- VIETNAMESE -->
+      <div class="guide-lang-panel" id="guidePanel-VI">
+        <p>NKTg AI không phải công cụ tóm tắt. Đây là <strong>Hệ thống Giải mã Ngôn ngữ</strong> chuyên dụng, dùng thuật toán vật lý để đo năng lượng ngữ nghĩa và trích xuất <strong>Câu trọng tâm (Core Content)</strong> — mã gen logic cốt lõi của văn bản.</p>
+        <h2>1. Bản chất Câu trọng tâm</h2>
+        <p><strong>Câu trọng tâm</strong> là câu có mật độ hành động thực thi cao nhất và kết quả cụ thể nhất. Nếu bị loại bỏ, văn bản mất thông tin then chốt không thể suy ra từ các câu còn lại.</p>
+        <p>Đây là <strong>câu nguyên bản</strong> từ văn bản nguồn — không bị diễn giải hay biến đổi.</p>
+        <h2>2. Triết lý</h2>
+        <h3>AI Tạo sinh</h3><p>Đọc và diễn giải lại văn bản bằng ngôn ngữ của AI.</p>
+        <h3>NKTg AI</h3><p>Đo năng lượng từng từ, từng câu để xác định nội dung cốt lõi đã tồn tại. Trả về mã gen ngôn ngữ nguyên bản của tác giả.</p>
+        <h2>3. Mã gen cấu trúc văn bản</h2>
+        <div class="guide-formula">AMP (Amplifying) + DAMP (Damping) + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> Amplifying &gt; 55%</h3>
+        <p>Năng lượng tăng — Hành động, Khẳng định, Triển khai, Kết quả. Văn bản có trọng tâm rõ ràng.</p>
+        <h3><span class="guide-tag damp">DAMP</span> Damping &gt; 55%</h3>
+        <p>Năng lượng giảm — Điều kiện, Bối cảnh, Rủi ro, Ngoại lệ, Phản biện. Văn bản thiên về phân tích điều kiện.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3>
+        <p>Trạng thái cân bằng — Thông tin kỹ thuật, dữ liệu thuần túy. Có thể không có Câu trọng tâm nổi trội.</p>
+        <h2>4. Các chế độ đầu ra</h2>
+        <h3>🧠 Não Trái (Extraction) — Chắt lọc</h3>
+        <h4>Standard</h4><p>Giữ câu quan trọng nhất theo tỷ lệ vàng. Phù hợp đọc nhanh.</p>
+        <h4>Condensed</h4><p>Loại bỏ câu lặp ý. Phù hợp văn bản dài.</p>
+        <h4>Essence</h4><p>Hội tụ về một Câu trọng tâm duy nhất. Khuyến nghị khi <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Não Phải (Addition) — Mở rộng</h3>
+        <h4>Refined</h4><p>Giữ hạt nhân nội dung và bổ sung bối cảnh tối thiểu.</p>
+        <h4>Expanded</h4><p>Câu trọng tâm kết hợp bối cảnh liên quan xung quanh.</p>
+        <h4>Comprehensive (100%)</h4><p>Giữ toàn bộ văn bản, đánh dấu thành phần DAMPING để phân biệt.</p>
+        <h2>5. Giá trị cho chuyên gia & nhà quản lý</h2>
+        <ul>
+          <li><strong>Định lượng:</strong> AMP%, DAMP%, Compression%, số câu giữ lại</li>
+          <li><strong>Nhân quả:</strong> Câu trọng tâm thường trong cấu trúc Hành động → Kết quả</li>
+          <li><strong>Quyết định:</strong> Đánh giá nhanh có nên đọc tiếp, kiểm tra sâu hay hành động</li>
+          <li><strong>Khách quan:</strong> Dựa trên thuật toán đo năng lượng, không phải cảm tính</li>
+        </ul>
+        <h2>6. Giá trị cho người dùng phổ thông</h2>
+        <ul>
+          <li><strong>Đọc nhanh:</strong> Xác định ngay câu có mật độ hành động cao nhất</li>
+          <li><strong>Đánh giá trước khi đọc:</strong> Quan sát AMP/DAMP ở vòng đầu</li>
+          <li><strong>So sánh khách quan:</strong> So sánh Câu trọng tâm nhiều văn bản cùng chủ đề</li>
+          <li><strong>Phát hiện điểm cần lưu ý:</strong> Nhận diện điều kiện, cảnh báo, rủi ro</li>
+        </ul>
+        <h2>7. Giới hạn cần lưu ý</h2>
+        <p>Nếu <strong>Compression &gt; 90%</strong> ở Standard hoặc Refined, hãy sao chép thủ công hoặc tải file lên để đảm bảo toàn vẹn dữ liệu.</p>
+        <p>NKTg AI hoạt động <strong>không tốt với tài liệu viết tay</strong> — độ chính xác OCR giảm đáng kể so với chữ in, có thể ảnh hưởng đến chất lượng trích xuất văn bản.</p>
+        <h2>8. NKTg Law — Thuật toán Quán tính biến thiên</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Thế năng ngữ nghĩa)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Động năng ngữ nghĩa)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>Toàn bộ xử lý chạy ngay trên trình duyệt bằng <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>Văn bản <strong>không bao giờ rời khỏi</strong> máy của người dùng</li>
+                <li>Không server, không cloud, không database từ xa</li>
+                <li>Lịch sử lưu trong <code>localStorage</code> — nằm hoàn toàn trên máy người dùng</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- FRENCH -->
+      <div class="guide-lang-panel" id="guidePanel-FR">
+        <p>NKTg AI n'est pas un outil de résumé. C'est un <strong>Système de Décodage du Langage</strong> spécialisé qui mesure l'énergie sémantique et extrait le <strong>Contenu Central (Core Content)</strong> — le code génétique logique fondamental d'un texte.</p>
+        <h2>1. Nature du Contenu Central</h2>
+        <p><strong>Contenu Central</strong> : la phrase avec la plus haute densité d'actions exécutables et le résultat le plus concret. Sa suppression ferait perdre des informations clés irréductibles.</p>
+        <p>C'est une <strong>phrase originale</strong> du texte source — non interprétée ni modifiée par un raisonnement subjectif.</p>
+        <h2>2. Philosophie</h2>
+        <h3>IA Générative</h3><p>Lit et reformule le texte avec son propre langage.</p>
+        <h3>NKTg AI</h3><p>Mesure l'énergie de chaque mot pour identifier le contenu central déjà présent. Retourne le code génétique linguistique original de l'auteur.</p>
+        <h2>3. Code Génétique du Texte</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>Énergie croissante — actions, affirmations, résultats.</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>Énergie décroissante — conditions, contexte, risques, contre-arguments.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>État équilibré — données techniques, descriptions neutres.</p>
+        <h2>4. Modes de Sortie</h2>
+        <h3>🧠 Cerveau Gauche (Extraction)</h3>
+        <h4>Standard</h4><p>Retient les phrases principales selon le nombre d'or.</p>
+        <h4>Condensed</h4><p>Élimine les répétitions.</p>
+        <h4>Essence</h4><p>Une seule phrase centrale. Recommandé si <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Cerveau Droit (Addition)</h3>
+        <h4>Refined</h4><p>Standard + contexte minimal.</p>
+        <h4>Expanded</h4><p>Contenu central + contexte pertinent.</p>
+        <h4>Comprehensive</h4><p>Texte complet avec marquage des composants DAMPING.</p>
+        <h2>5. Valeur pour Experts</h2>
+        <ul><li><strong>Quantifiabilité :</strong> AMP%, DAMP%, Compression%</li><li><strong>Causalité :</strong> Action → Résultat</li><li><strong>Décision :</strong> Évaluation rapide de la pertinence</li><li><strong>Objectivité :</strong> Algorithme énergétique</li></ul>
+        <h2>6. Valeur pour Utilisateurs Généraux</h2>
+        <ul><li>Lecture rapide et évaluation préalable</li><li>Comparaison objective de textes</li><li>Identification des avertissements et risques</li></ul>
+        <h2>7. Limitations</h2>
+        <p>Si <strong>Compression &gt; 90%</strong> en mode Standard ou Refined : copier manuellement ou télécharger le fichier.</p>
+        <p>NKTg AI fonctionne <strong>mal avec les documents manuscrits</strong> — la précision OCR diminue nettement par rapport au texte imprimé, ce qui peut affecter la qualité de l'extraction.</p>
+        <h2>8. Loi NKTg — Algorithme d'Inertie Variable</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Énergie potentielle sémantique)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Énergie cinétique sémantique)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>L'intégralité du traitement s'exécute directement dans le navigateur via <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>Le texte <strong>ne quitte jamais</strong> l'appareil de l'utilisateur</li>
+                <li>Aucun serveur, aucun cloud, aucune base de données distante</li>
+                <li>L'historique est stocké dans <code>localStorage</code> — entièrement sur l'appareil de l'utilisateur</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- GERMAN -->
+      <div class="guide-lang-panel" id="guidePanel-DE">
+        <p>NKTg AI ist kein Zusammenfassungswerkzeug. Es ist ein spezialisiertes <strong>Sprachdecodierungssystem</strong>, das physikalische Algorithmen zur Messung semantischer Energie und zur Extraktion des <strong>Kerninhalts (Core Content)</strong> verwendet.</p>
+        <h2>1. Natur des Kerninhalts</h2>
+        <p><strong>Kerninhalt</strong>: Der Satz mit der höchsten Dichte ausführbarer Aktionen. Seine Entfernung würde Schlüsselinformationen verloren gehen lassen.</p>
+        <p>Es ist ein <strong>Originalsatz</strong> aus dem Quelltext — nicht interpretiert oder durch subjektive Argumentation verändert.</p>
+        <h2>2. Philosophie</h2>
+        <h3>Generative KI</h3><p>Liest und reformuliert Text in eigener Sprache.</p>
+        <h3>NKTg AI</h3><p>Misst die Energie jedes Wortes, um vorhandenen Kerninhalt zu identifizieren. Gibt den originalen sprachlichen genetischen Code des Autors zurück.</p>
+        <h2>3. Genetischer Code der Textstruktur</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>Zunehmende Energie — Aktionen, Behauptungen, Ergebnisse.</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>Abnehmende Energie — Bedingungen, Kontext, Risiken, Gegenargumente.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>Gleichgewichtszustand — Technische Daten, neutrale Beschreibungen.</p>
+        <h2>4. Ausgabemodi</h2>
+        <h3>🧠 Linkes Gehirn (Extraktion)</h3>
+        <h4>Standard</h4><p>Behält die wichtigsten Sätze nach dem Goldenen Schnitt.</p>
+        <h4>Condensed</h4><p>Entfernt Wiederholungen.</p>
+        <h4>Essence</h4><p>Konvergiert zu einem einzigen Kernsatz. Empfohlen bei <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Rechtes Gehirn (Addition)</h3>
+        <h4>Refined</h4><p>Kern + minimaler Kontext.</p>
+        <h4>Expanded</h4><p>Kerninhalt + relevanter Kontext.</p>
+        <h4>Comprehensive</h4><p>Vollständiger Text mit markierten DAMPING-Komponenten.</p>
+        <h2>5. Wert für Experten & Manager</h2>
+        <ul><li><strong>Quantifizierbarkeit:</strong> AMP%, DAMP%, Kompression%</li><li><strong>Kausalität:</strong> Aktion → Ergebnis</li><li><strong>Entscheidungsfindung:</strong> Schnelle Relevanzbeurteilung</li><li><strong>Objektivität:</strong> Energiemessungsalgorithmus</li></ul>
+        <h2>6. Wert für allgemeine Nutzer</h2>
+        <ul><li><strong>Schnelles Lesen:</strong> Sofortige Identifikation des Satzes mit höchster Aktionsdichte</li><li><strong>Bewertung vor dem Lesen:</strong> AMP/DAMP in der ersten Runde beobachten</li><li><strong>Objektiver Vergleich:</strong> Kerninhalt über mehrere Texte hinweg vergleichen</li><li><strong>Wichtige Punkte erkennen:</strong> Bedingungen, Warnungen oder Risiken erkennen</li></ul>
+        <h2>7. Einschränkungen</h2>
+        <p>Bei <strong>Kompression &gt; 90%</strong> im Standard- oder Refined-Modus: Inhalt manuell kopieren oder Datei hochladen.</p>
+        <p>NKTg AI funktioniert <strong>bei handschriftlichen Dokumenten nur eingeschränkt</strong> — die OCR-Genauigkeit ist deutlich geringer als bei gedrucktem Text, was die Extraktionsqualität beeinträchtigen kann.</p>
+        <h2>8. NKTg-Gesetz — Variabler Trägheitsalgorithmus</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Semantische potenzielle Energie)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Semantische kinetische Energie)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>Die gesamte Verarbeitung läuft direkt im Browser über <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>Der Text <strong>verlässt niemals</strong> das Gerät des Benutzers</li>
+                <li>Kein Server, keine Cloud, keine Remote-Datenbank</li>
+                <li>Der Verlauf wird in <code>localStorage</code> gespeichert — vollständig auf dem Gerät des Benutzers</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- SPANISH -->
+      <div class="guide-lang-panel" id="guidePanel-ES">
+        <p>NKTg AI no es una herramienta de resumen. Es un <strong>Sistema de Decodificación del Lenguaje</strong> especializado que mide la energía semántica y extrae el <strong>Contenido Central (Core Content)</strong> — el código genético lógico fundamental de un texto.</p>
+        <h2>1. Naturaleza del Contenido Central</h2>
+        <p><strong>Contenido Central</strong>: la oración con mayor densidad de acciones ejecutables. Su eliminación haría perder información clave no deducible del resto.</p>
+        <p>Es una <strong>oración original</strong> del texto fuente — no interpretada ni alterada por razonamiento subjetivo.</p>
+        <h2>2. Filosofía</h2>
+        <h3>IA Generativa</h3><p>Lee y reformula el texto con su propio lenguaje.</p>
+        <h3>NKTg AI</h3><p>Mide la energía de cada palabra para identificar el contenido central ya existente. Devuelve el código genético lingüístico original del autor.</p>
+        <h2>3. Código Genético de la Estructura del Texto</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>Energía creciente — acciones, afirmaciones, resultados.</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>Energía decreciente — condiciones, contexto, riesgos, contraargumentos.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>Estado equilibrado — datos técnicos, descripciones neutras.</p>
+        <h2>4. Modos de Salida</h2>
+        <h3>🧠 Cerebro Izquierdo (Extracción)</h3>
+        <h4>Standard</h4><p>Retiene las oraciones más importantes según la Proporción Áurea.</p>
+        <h4>Condensed</h4><p>Elimina repeticiones.</p>
+        <h4>Essence</h4><p>Converge a una sola oración central. Recomendado si <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Cerebro Derecho (Adición)</h3>
+        <h4>Refined</h4><p>Núcleo de contenido + contexto mínimo necesario.</p>
+        <h4>Expanded</h4><p>Contenido central + contexto relevante.</p>
+        <h4>Comprehensive</h4><p>Texto completo con componentes DAMPING marcados.</p>
+        <h2>5. Valor para Expertos y Gerentes</h2>
+        <ul><li><strong>Cuantificabilidad:</strong> AMP%, DAMP%, Compresión%</li><li><strong>Causalidad:</strong> Acción → Resultado</li><li><strong>Toma de decisiones:</strong> Evaluación rápida de relevancia</li><li><strong>Objetividad:</strong> Algoritmo de medición energética</li></ul>
+        <h2>6. Valor para Usuarios Generales</h2>
+        <ul><li><strong>Lectura rápida:</strong> Identificar instantáneamente la oración con mayor densidad de acción</li><li><strong>Evaluar antes de leer:</strong> Observar AMP/DAMP en la primera ronda</li><li><strong>Comparación objetiva:</strong> Comparar el Contenido Central entre varios textos</li><li><strong>Identificar puntos clave:</strong> Detectar condiciones, advertencias o riesgos</li></ul>
+        <h2>7. Limitaciones</h2>
+        <p>Si <strong>Compresión &gt; 90%</strong> en modo Standard o Refined: copiar manualmente o subir el archivo.</p>
+        <p>NKTg AI <strong>no funciona bien con documentos manuscritos</strong> — la precisión del OCR disminuye notablemente en comparación con el texto impreso, lo que puede afectar la calidad de la extracción.</p>
+        <h2>8. Ley NKTg — Algoritmo de Inercia Variable</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Energía potencial semántica)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Energía cinética semántica)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>Todo el procesamiento se ejecuta directamente en el navegador mediante <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>El texto <strong>nunca abandona</strong> el dispositivo del usuario</li>
+                <li>Sin servidor, sin nube, sin base de datos remota</li>
+                <li>El historial se almacena en <code>localStorage</code> — completamente en el dispositivo del usuario</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- CHINESE -->
+      <div class="guide-lang-panel" id="guidePanel-ZH">
+        <p>NKTg AI 不是摘要工具。它是一个专业的<strong>语言解码系统</strong>，利用物理算法测量语义能量，提取<strong>核心内容（Core Content）</strong>——文本的核心逻辑遗传密码。</p>
+        <h2>1. 核心内容的本质</h2>
+        <p><strong>核心内容</strong>：包含最高密度可执行动作的句子。删除后，文本将失去无法从其余句子推断的关键信息。</p>
+        <p>它是源文本中的<strong>原句</strong>——未经主观推理解释或改动。</p>
+        <h2>2. 理念</h2>
+        <h3>生成式 AI</h3><p>阅读文本并用 AI 自己的语言重新解释。</p>
+        <h3>NKTg AI</h3><p>测量每个词和句子的能量，识别文本中已存在的核心内容。返回作者的原始语言遗传密码。</p>
+        <h2>3. 文本结构遗传密码</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>能量递增 — 动作、断言、执行、结果。</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>能量递减 — 条件、背景、风险、例外、反论。</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>平衡状态 — 技术信息、纯数据、描述性内容。</p>
+        <h2>4. 输出模式</h2>
+        <h3>🧠 左脑（提取）— 精炼</h3>
+        <h4>Standard</h4><p>按黄金比例保留最重要的句子。</p>
+        <h4>Condensed</h4><p>继续删除重复或语义相似的句子。</p>
+        <h4>Essence</h4><p>收敛为单一核心内容句子。<strong>AMP &gt; 55%</strong> 时推荐。</p>
+        <h3>🧠 右脑（添加）— 扩展</h3>
+        <h4>Refined</h4><p>保留内容核心并添加最少必要的背景。</p>
+        <h4>Expanded</h4><p>核心内容与周围相关背景相结合。</p>
+        <h4>Comprehensive</h4><p>保留完整文本并标记 DAMPING 组件。</p>
+        <h2>5. 对专家与管理者的价值</h2>
+        <ul><li><strong>可量化性：</strong>AMP%、DAMP%、压缩率%</li><li><strong>因果性：</strong>动作 → 结果</li><li><strong>决策性：</strong>快速评估是否继续阅读或采取行动</li><li><strong>客观性：</strong>基于语义能量算法</li></ul>
+        <h2>6. 对普通用户的价值</h2>
+        <ul><li><strong>快速阅读：</strong>瞬间识别动作密度最高的句子</li><li><strong>阅读前评估：</strong>第一轮观察 AMP/DAMP</li><li><strong>客观比较：</strong>跨多篇文本比较核心内容</li><li><strong>识别关键点：</strong>发现条件、警告或风险</li></ul>
+        <h2>7. 注意限制</h2>
+        <p>如果 <strong>压缩率 &gt; 90%</strong>（Standard 或 Refined 模式），请手动复制内容或上传文件以确保数据完整性。</p>
+        <p>NKTg AI 对<strong>手写文档的支持效果不佳</strong> —— 与印刷文本相比，OCR 识别准确率明显下降，可能影响文本提取质量。</p>
+        <h2>8. NKTg 定律 — 可变惯性算法</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (语义势能)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (语义动能)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>所有处理通过 <strong>WebAssembly</strong> 直接在浏览器中运行。</p>
+            <ul>
+                <li>文本<strong>永远不会离开</strong>用户的设备</li>
+                <li>无服务器、无云端、无远程数据库</li>
+                <li>历史记录存储在 <code>localStorage</code> 中——完全在用户设备上</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- JAPANESE -->
+      <div class="guide-lang-panel" id="guidePanel-JA">
+        <p>NKTg AI は要約ツールではありません。物理的アルゴリズムを使って意味エネルギーを測定し、<strong>コアコンテンツ（Core Content）</strong>——テキストの論理的遺伝子コード——を抽出する専門的な<strong>言語デコーディングシステム</strong>です。</p>
+        <h2>1. コアコンテンツの性質</h2>
+        <p><strong>コアコンテンツ</strong>：実行可能なアクションの密度が最も高い文。削除すると、残りの文から推測できない重要情報が失われます。</p>
+        <p>それは原文からの<strong>そのままの一文</strong>であり、主観的な解釈や改変は加えられていません。</p>
+        <h2>2. 哲学</h2>
+        <h3>生成 AI</h3><p>テキストを読み、AI 自身の言語で再解釈します。</p>
+        <h3>NKTg AI</h3><p>各単語とセンテンスのエネルギーを測定し、すでに存在するコアコンテンツを識別。著者の元の言語的遺伝子コードを返します。</p>
+        <h2>3. テキスト構造遺伝子コード</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>エネルギー増加 — アクション、主張、実行、結果。</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>エネルギー減少 — 条件、コンテキスト、リスク、反論。</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>均衡状態 — 技術情報、純粋なデータ。</p>
+        <h2>4. 出力モード</h2>
+        <h3>🧠 左脳（抽出）— 蒸留</h3>
+        <h4>Standard</h4><p>黄金比に従い最重要文を保持。</p>
+        <h4>Condensed</h4><p>繰り返し文を除去。</p>
+        <h4>Essence</h4><p>単一のコアコンテンツに収束。<strong>AMP &gt; 55%</strong> 推奨。</p>
+        <h3>🧠 右脳（追加）— 拡張</h3>
+        <h4>Refined</h4><p>コアを保持し最小限のコンテキストを追加。</p>
+        <h4>Expanded</h4><p>コアと関連コンテキストの組み合わせ。</p>
+        <h4>Comprehensive</h4><p>DAMPING コンポーネントをマークした完全テキスト。</p>
+        <h2>5. 専門家・マネージャーにとっての価値</h2>
+        <ul><li><strong>定量化：</strong>AMP%、DAMP%、圧縮率%</li><li><strong>因果性：</strong>アクション → 結果</li><li><strong>意思決定：</strong>継続読書・行動の迅速評価</li><li><strong>客観性：</strong>エネルギー測定アルゴリズム</li></ul>
+        <h2>6. 一般ユーザーにとっての価値</h2>
+        <ul><li><strong>速読：</strong>アクション密度が最も高い文を即座に特定</li><li><strong>読む前の評価：</strong>最初のラウンドで AMP/DAMP を観察</li><li><strong>客観的比較：</strong>複数のテキスト間でコアコンテンツを比較</li><li><strong>重要ポイントの把握：</strong>条件・警告・リスクを発見</li></ul>
+        <h2>7. 制限事項</h2>
+        <p>Standard または Refined モードで <strong>圧縮率 &gt; 90%</strong> の場合、手動でコピーまたはファイルをアップロードしてください。</p>
+        <p>NKTg AI は<strong>手書き文書には十分に対応していません</strong> —— 印刷文字と比べてOCRの認識精度が大きく低下し、抽出の品質に影響する場合があります。</p>
+        <h2>8. NKTg 法則 — 可変慣性アルゴリズム</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (意味的位置エネルギー)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (意味的運動エネルギー)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>すべての処理は <strong>WebAssembly</strong> によってブラウザ上で直接実行されます。</p>
+            <ul>
+                <li>テキストがユーザーのデバイスを<strong>離れることはありません</strong></li>
+                <li>サーバーなし、クラウドなし、リモートデータベースなし</li>
+                <li>履歴は <code>localStorage</code> に保存され、完全にユーザーのデバイス上にあります</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- RUSSIAN -->
+      <div class="guide-lang-panel" id="guidePanel-RU">
+        <p>NKTg AI — не инструмент для резюмирования. Это специализированная <strong>Система декодирования языка</strong>, использующая физические алгоритмы для измерения семантической энергии и извлечения <strong>основного содержания (Core Content)</strong> — ключевого логического генетического кода текста.</p>
+        <h2>1. Природа основного содержания</h2>
+        <p><strong>Основное содержание</strong>: предложение с наибольшей плотностью исполняемых действий. Его удаление лишает текст ключевой информации.</p>
+        <p>Это <strong>исходное предложение</strong> из исходного текста — без интерпретации или изменения субъективными рассуждениями.</p>
+        <h2>2. Философия</h2>
+        <h3>Генеративный ИИ</h3><p>Читает и переформулирует текст на собственном языке.</p>
+        <h3>NKTg AI</h3><p>Измеряет энергию каждого слова для идентификации уже существующего основного содержания. Возвращает оригинальный языковой генетический код автора.</p>
+        <h2>3. Генетический код структуры текста</h2>
+        <div class="guide-formula">AMP + DAMP + STABLE = 100%</div>
+        <h3><span class="guide-tag amp">AMP</span> &gt; 55%</h3><p>Возрастающая энергия — действия, утверждения, результаты.</p>
+        <h3><span class="guide-tag damp">DAMP</span> &gt; 55%</h3><p>Убывающая энергия — условия, контекст, риски, контраргументы.</p>
+        <h3><span class="guide-tag stable">STABLE</span> AMP ≈ DAMP</h3><p>Сбалансированное состояние — технические данные, описания.</p>
+        <h2>4. Режимы вывода</h2>
+        <h3>🧠 Левое полушарие (Извлечение)</h3>
+        <h4>Standard</h4><p>Сохраняет важнейшие предложения по золотому сечению.</p>
+        <h4>Condensed</h4><p>Удаляет повторяющиеся предложения.</p>
+        <h4>Essence</h4><p>Сводится к одному основному предложению. Рекомендуется при <strong>AMP &gt; 55%</strong>.</p>
+        <h3>🧠 Правое полушарие (Добавление)</h3>
+        <h4>Refined</h4><p>Ядро содержания + минимальный контекст.</p>
+        <h4>Expanded</h4><p>Основное содержание + релевантный контекст.</p>
+        <h4>Comprehensive</h4><p>Полный текст с отмеченными компонентами DAMPING.</p>
+        <h2>5. Ценность для экспертов и руководителей</h2>
+        <ul><li><strong>Количественность:</strong> AMP%, DAMP%, сжатие%</li><li><strong>Причинность:</strong> Действие → Результат</li><li><strong>Принятие решений:</strong> Быстрая оценка актуальности</li><li><strong>Объективность:</strong> Алгоритм измерения энергии</li></ul>
+        <h2>6. Ценность для обычных пользователей</h2>
+        <ul><li><strong>Быстрое чтение:</strong> Мгновенно определить предложение с наибольшей плотностью действий</li><li><strong>Оценка перед чтением:</strong> Наблюдать AMP/DAMP в первом раунде</li><li><strong>Объективное сравнение:</strong> Сравнивать основное содержание разных текстов</li><li><strong>Выявление ключевых моментов:</strong> Замечать условия, предупреждения или риски</li></ul>
+        <h2>7. Ограничения</h2>
+        <p>Если <strong>сжатие &gt; 90%</strong> в режиме Standard или Refined: скопируйте вручную или загрузите файл.</p>
+        <p>NKTg AI <strong>плохо работает с рукописными документами</strong> — точность OCR заметно снижается по сравнению с печатным текстом, что может повлиять на качество извлечения данных.</p>
+        <h2>8. Закон NKTg — Алгоритм переменной инерции</h2>
+        <div class="guide-formula">NKTg = f(x, v, m)<br>p = m × v<br>NKTg₁ = x × p &nbsp;&nbsp; (Семантическая потенциальная энергия)<br>NKTg₂ = (dm/dt) × p &nbsp;&nbsp; (Семантическая кинетическая энергия)<br>NKTg(total) = f(NKTg₁, NKTg₂)</div>
+      
+        <div class="guide-privacy">
+            <p>Вся обработка выполняется непосредственно в браузере через <strong>WebAssembly</strong>.</p>
+            <ul>
+                <li>Текст <strong>никогда не покидает</strong> устройство пользователя</li>
+                <li>Никаких серверов, облаков или удалённых баз данных</li>
+                <li>История хранится в <code>localStorage</code> — полностью на устройстве пользователя</li>
+            </ul>
+        </div>
+      </div>
+
+    </div><!-- /.guide-body -->
+  </div><!-- /.guide-box -->
+</div><!-- /#nktgGuideModal -->
+
+<script>
+(function(){
+    const LANGS = {
+        EN: { flag: '🇺🇸', label: 'English' },
+        VI: { flag: '🇻🇳', label: 'Tiếng Việt' },
+        FR: { flag: '🇫🇷', label: 'Français' },
+        DE: { flag: '🇩🇪', label: 'Deutsch' },
+        ES: { flag: '🇪🇸', label: 'Español' },
+        ZH: { flag: '🇨🇳', label: '中文' },
+        JA: { flag: '🇯🇵', label: '日本語' },
+        RU: { flag: '🇷🇺', label: 'Русский' },
+    };
+
+    let currentLang = 'EN';
+
+    function openGuide() {
+        document.getElementById('nktgGuideModal').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeGuide() {
+        document.getElementById('nktgGuideModal').classList.remove('open');
+        document.body.style.overflow = '';
+        closeLangDropdown();
+    }
+    function openLangDropdown() {
+        document.getElementById('guideLangDropdown').classList.add('open');
+    }
+    function closeLangDropdown() {
+        document.getElementById('guideLangDropdown').classList.remove('open');
+    }
+    function switchLang(lang) {
+        // Ẩn panel cũ
+        document.getElementById('guidePanel-' + currentLang).classList.remove('active');
+        // Hiện panel mới
+        document.getElementById('guidePanel-' + lang).classList.add('active');
+        // Cập nhật trigger label
+        document.getElementById('guideLangLabel').textContent = LANGS[lang].flag + ' ' + LANGS[lang].label;
+        // Cập nhật active trên option
+        document.querySelectorAll('.guide-lang-option').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        currentLang = lang;
+        closeLangDropdown();
+        // Scroll về đầu body
+        document.querySelector('.guide-body').scrollTop = 0;
+    }
+
+    // Gắn vào tất cả nút Guide trong nav
+    document.querySelectorAll('.nav-item').forEach(btn => {
+        const spans = btn.querySelectorAll('span');
+        spans.forEach(sp => {
+            if (sp.textContent.trim() === 'Guide') {
+                btn.addEventListener('click', openGuide);
+            }
+        });
+    });
+
+    // Đóng modal
+    document.getElementById('nktgGuideModal').addEventListener('click', e => {
+        if (e.target === document.getElementById('nktgGuideModal')) closeGuide();
+    });
+    document.getElementById('guideClose').addEventListener('click', closeGuide);
+
+    // Language dropdown toggle
+    document.getElementById('guideLangTrigger').addEventListener('click', e => {
+        e.stopPropagation();
+        const dd = document.getElementById('guideLangDropdown');
+        dd.classList.contains('open') ? closeLangDropdown() : openLangDropdown();
+    });
+
+    // Chọn ngôn ngữ
+    document.querySelectorAll('.guide-lang-option').forEach(btn => {
+        btn.addEventListener('click', () => switchLang(btn.dataset.lang));
+    });
+
+    // Đóng dropdown khi click ngoài
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.guide-lang-wrap')) closeLangDropdown();
+    });
+
+    // ESC để đóng modal
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeGuide();
+    });
+})();
+</script>
+
+</body>
+</html>
